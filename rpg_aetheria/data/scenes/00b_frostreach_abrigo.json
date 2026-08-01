@@ -1,0 +1,10 @@
+{
+  "id": "00b_frostreach_abrigo",
+  "texto": "Você se abriga atrás de uma formação de gelo, ganhando tempo pra pensar antes de arriscar a travessia até as luzes. O frio ainda corta, mas pelo menos o vento direto para de castigar seu rosto.",
+  "opcoes": [
+    {
+      "texto": "Seguir para as luzes assim que o vento acalmar",
+      "destino": "01_stonhelm_hub"
+    }
+  ]
+}

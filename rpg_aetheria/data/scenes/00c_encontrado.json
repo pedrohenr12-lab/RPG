@@ -1,0 +1,15 @@
+{
+  "id": "00c_encontrado",
+  "texto": "Poucos minutos depois, um caçador da Vila de Eldor aparece entre as árvores, arco em mãos, desconfiado. Ele te observa por um instante antes de baixar a arma. \"Não é daqui, é? Vem, antes que escureça.\"",
+  "opcoes": [
+    {
+      "texto": "Segui-lo em silêncio",
+      "efeitos": [{"tipo": "flag", "valor": "reservado"}],
+      "destino": "01_vila_eldor"
+    },
+    {
+      "texto": "Contar a verdade: não sabe como chegou ali",
+      "destino": "01_vila_eldor"
+    }
+  ]
+}

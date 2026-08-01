@@ -1,0 +1,35 @@
+{
+  "id": "01_vila_eldor",
+  "texto": "A Vila de Eldor se ergue diante de você: casas de madeira, fumaça saindo das chaminés, gente ocupada com suas tarefas. Alguns moradores olham na sua direção com curiosidade — um forasteiro não passa despercebido aqui.",
+  "opcoes": [
+    {
+      "texto": "Procurar o Ancião da vila",
+      "destino": "01a_anciao"
+    },
+    {
+      "texto": "Ir até a Taverna",
+      "destino": "01b_taverna"
+    },
+    {
+      "texto": "Ajudar um fazendeiro com um lobo que ataca o rebanho (combate)",
+      "destino": "01c_fazendeiro_lobo"
+    },
+    {
+      "texto": "Não falar com ninguém e seguir sozinho para fora da vila",
+      "efeitos": [{"tipo": "flag", "valor": "isolado_no_inicio"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "(Elfo) Parar diante de uma árvore antiga na praça — algo nela parece reconhecer você",
+      "condicao": {"raca": "elfo"},
+      "efeitos": [{"tipo": "flag", "valor": "arvore_reconheceu_elfo"}],
+      "destino": "01d_elfo_arvore"
+    },
+    {
+      "texto": "(Anão) Examinar as pedras da fundação da vila — o corte é estranhamente familiar",
+      "condicao": {"raca": "anao"},
+      "efeitos": [{"tipo": "flag", "valor": "reconhece_trabalho_anao"}],
+      "destino": "01e_anao_pedras"
+    }
+  ]
+}

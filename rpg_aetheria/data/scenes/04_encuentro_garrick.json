@@ -1,0 +1,77 @@
+{
+  "id": "04_encuentro_garrick",
+  "variações": [
+    {
+      "condicao": {
+        "tipo": "AND",
+        "items": [
+          {"tipo": "tem_flag", "valor": "ajudou_garrick"},
+          {"tipo": "nao_tem_flag", "valor": "roubou_caravana"}
+        ]
+      },
+      "texto": "Você cruza caminhos com Garrick novamente. Desta vez, ele sorri e te cumprimenta como um aliado. 'Você voltou! Tenho uma proposição que pode te interessar. Há um lugar nas montanhas onde minério estranho foi encontrado. Ninguém que foi lá voltou com respostas claras. Mas você... você é diferente. Quer tentar?'",
+      "opcoes": [
+        {
+          "texto": "Aceitar a missão e partir com Garrick",
+          "efeitos": [
+            {"tipo": "flag", "valor": "aceitou_missao_garrick"},
+            {"tipo": "reputacao", "faccao": "caravana", "valor": 20}
+          ],
+          "destino": "05_montanha_misteriosa"
+        },
+        {
+          "texto": "Recusar educadamente",
+          "destino": "04_decisao_caminho_geral"
+        }
+      ]
+    },
+    {
+      "condicao": {
+        "tipo": "AND",
+        "items": [
+          {"tipo": "tem_flag", "valor": "roubou_caravana"},
+          {"tipo": "nao_tem_flag", "valor": "ajudou_garrick"}
+        ]
+      },
+      "texto": "Você reconhece Garrick entre uma multidão. Seus olhos se encontram por um segundo, e você vê raiva pura. Ele sussurra para os homens ao seu lado apontando para você. Seus aliados começam a se mover na sua direção, cercando lentamente. 'Você vai pagar o que roubou', grita Garrick.",
+      "opcoes": [
+        {
+          "texto": "Tentar se justificar",
+          "efeitos": [
+            {"tipo": "reputacao", "faccao": "caravana", "valor": -20}
+          ],
+          "destino": "04_confronto_garrick"
+        },
+        {
+          "texto": "Correr",
+          "efeitos": [
+            {"tipo": "flag", "valor": "fugiu_de_garrick"}
+          ],
+          "destino": "04_fuga"
+        },
+        {
+          "texto": "Enfrentar Garrick e seus homens em combate",
+          "combate": {
+            "inimigo": {"nome": "Garrick e Aliados", "vida": 20, "ataque": 5, "defesa": 3},
+            "destino_vitoria": "04_confronto_vitoria",
+            "destino_derrota": "fim_derrota"
+          }
+        }
+      ]
+    },
+    {
+      "condicao": null,
+      "texto": "Você caminha por um caminho isolado. Não vê Garrick por enquanto. O mundo é grande, e os caminhos são ainda maiores.",
+      "opcoes": [
+        {
+          "texto": "Continuar explorando",
+          "destino": "04_decisao_caminho_geral"
+        },
+        {
+          "texto": "Procurar por sinais de civilização",
+          "destino": "04_procurar_vila"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fim_demo",
+    "texto": "=== FIM DA DEMONSTRAÇÃO ===\n\nEssa é a fatia inicial da jornada. A partir daqui, o resto do mapa de Eldoria (Frostreach, Arkanor, Stonevale, Blackmarsh, a Espinha do Mundo) e a trama de Vael'Tharion se abrem conforme novas cenas forem adicionadas em data/scenes/.",
+    "opcoes": []
+  },
+  {
+    "id": "fim_derrota",
+    "texto": "=== VOCÊ MORREU ===\n\nSua jornada termina aqui, cedo demais. Talvez uma escolha diferente tivesse mudado seu destino.",
+    "opcoes": []
+  }
+]

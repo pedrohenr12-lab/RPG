@@ -1,0 +1,27 @@
+{
+  "id": "01_stonhelm_hub",
+  "texto": "Você chega a Stonhelm, o único centro comercial de porte no norte gelado. As ruas são estreitas, protegidas do vento por paredes altas de pedra e gelo compactado. Os moradores olham para você — um forasteiro sem casaco adequado — com uma mistura de pena e desconfiança.",
+  "opcoes": [
+    {
+      "texto": "Procurar abrigo no Salão dos Anciãos",
+      "efeitos": [{"tipo": "flag", "valor": "regiao_frostreach"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Tentar se provar útil junto aos mineradores locais",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_frostreach"},
+        {"tipo": "flag", "valor": "trabalhador_frostreach"}
+      ],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Evitar contato e procurar um canto isolado pra passar a noite",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_frostreach"},
+        {"tipo": "flag", "valor": "isolado_no_inicio"}
+      ],
+      "destino": "fim_demo"
+    }
+  ]
+}

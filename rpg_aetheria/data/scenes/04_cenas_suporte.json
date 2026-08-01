@@ -1,0 +1,66 @@
+[
+  {
+    "id": "04_fuga",
+    "texto": "Você consegue escapar, mas sabe que Garrick agora é seu inimigo. Vai ser difícil passar pelas caravanas sem se esconder.",
+    "opcoes": [
+      {
+        "texto": "Continuar viagem evitando os mineradores",
+        "destino": "04_decisao_caminho_geral"
+      }
+    ]
+  },
+  {
+    "id": "04_confronto_vitoria",
+    "texto": "Você derrotou Garrick e seus aliados em uma batalha feroz. Ele fica deitado no chão, respirando com dificuldade. A vitória foi custosa, e agora você é um foragido da caravana.",
+    "opcoes": [
+      {
+        "texto": "Deixá-lo vivo como aviso",
+        "efeitos": [{"tipo": "flag", "valor": "deixou_garrick_vivo"}],
+        "destino": "04_decisao_caminho_geral"
+      },
+      {
+        "texto": "Terminar o trabalho",
+        "efeitos": [
+          {"tipo": "flag", "valor": "matou_garrick"},
+          {"tipo": "reputacao", "faccao": "caravana", "valor": -50}
+        ],
+        "destino": "04_decisao_caminho_geral"
+      }
+    ]
+  },
+  {
+    "id": "04_decisao_caminho_geral",
+    "texto": "Você continua sua jornada. As escolhas que fez até agora definiram seu caminho, e o futuro é incerto.",
+    "opcoes": [
+      {
+        "texto": "Fim da demonstração",
+        "destino": "fim_demo"
+      }
+    ]
+  },
+  {
+    "id": "04_procurar_vila",
+    "texto": "Você procura por sinais de civilização e encontra uma trilha que leva a uma vila desconhecida.",
+    "opcoes": [
+      {
+        "texto": "Entrar na vila",
+        "destino": "04_decisao_caminho_geral"
+      }
+    ]
+  },
+  {
+    "id": "05_montanha_misteriosa",
+    "texto": "Você e Garrick chegam às montanhas. O minério aqui é diferente — brilha com uma luz interna que não deveria existir. Garrick sussurra 'isso não é normal' enquanto coleta amostras.",
+    "opcoes": [
+      {
+        "texto": "Investigar a fonte da luz",
+        "efeitos": [{"tipo": "flag", "valor": "investigou_mineiro_estranho"}],
+        "destino": "04_decisao_caminho_geral"
+      },
+      {
+        "texto": "Voltar para segurança",
+        "destino": "04_decisao_caminho_geral"
+      }
+    ]
+  }
+]

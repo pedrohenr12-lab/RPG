@@ -1,0 +1,9 @@
+{
+  "id": "01c_fazendeiro_lobo",
+  "texto": "Um fazendeiro aflito te pede ajuda: um lobo tem atacado o rebanho durante as noites. Sem arma nenhuma, você pega uma foice enferrujada apoiada na cerca e vai atrás da criatura.",
+  "combate": {
+    "inimigo": {"nome": "Lobo Faminto", "vida": 12, "ataque": 3, "defesa": 1},
+    "destino_vitoria": "01c_vitoria",
+    "destino_derrota": "fim_derrota"
+  }
+}

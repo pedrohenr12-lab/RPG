@@ -1,0 +1,19 @@
+{
+  "id": "01_blackmarsh_hub",
+  "texto": "Você alcança uma pequena vila sobre palafitas, erguida acima da água lodosa. As casas são simples, os moradores olham para fora com cautela — aqui, forasteiro costuma significar problema, doença ou os dois.",
+  "opcoes": [
+    {
+      "texto": "Tentar se aproximar e explicar sua situação",
+      "efeitos": [{"tipo": "flag", "valor": "regiao_blackmarsh"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Observar de longe, sem se aproximar de ninguém",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_blackmarsh"},
+        {"tipo": "flag", "valor": "isolado_no_inicio"}
+      ],
+      "destino": "fim_demo"
+    }
+  ]
+}

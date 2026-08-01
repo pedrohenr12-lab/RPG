@@ -1,0 +1,19 @@
+{
+  "id": "01_espinha_hub",
+  "texto": "Você chega a um posto avançado isolado, mantido por poucas famílias resistentes. Uma fortaleza anã se ergue mais adiante, entalhada na própria montanha — fechada, silenciosa, claramente não construída para receber visitas.",
+  "opcoes": [
+    {
+      "texto": "Pedir abrigo no posto avançado",
+      "efeitos": [{"tipo": "flag", "valor": "regiao_espinha_do_mundo"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Seguir sozinho, sem pedir ajuda a ninguém",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_espinha_do_mundo"},
+        {"tipo": "flag", "valor": "isolado_no_inicio"}
+      ],
+      "destino": "fim_demo"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "00_despertar_espinha",
+  "texto": "Você acorda num vale estreito entre picos que desaparecem nas nuvens. O ar é fino e cortante, e cada respiração dói um pouco. Não há vegetação à vista, só rocha, gelo e o eco distante de algo martelando metal contra pedra.",
+  "opcoes": [
+    {
+      "texto": "Seguir o som de martelo, na esperança de encontrar gente",
+      "destino": "01_espinha_hub"
+    },
+    {
+      "texto": "Procurar um caminho mais baixo, longe do frio extremo",
+      "efeitos": [{"tipo": "dano", "valor": 3}],
+      "destino": "01_espinha_hub"
+    }
+  ]
+}

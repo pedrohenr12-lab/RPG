@@ -1,0 +1,47 @@
+{
+  "humano": {
+    "nome_exibicao": "Humano",
+    "descricao": "Recém-chegado a Aetheria, sem memória de como atravessou. Equilibrado em tudo, mas sem vantagens claras — aprende as regras desse mundo do zero, como qualquer um faria.",
+    "vida_max": 20,
+    "ataque": 4,
+    "defesa": 2,
+    "flag_racial": "raca_humano",
+    "texto_criacao": "Você não lembra de nada antes de acordar aqui. Talvez isso, de um jeito estranho, seja uma vantagem: você não carrega nenhum preconceito antigo entre as raças deste mundo."
+  },
+  "elfo": {
+    "nome_exibicao": "Elfo",
+    "descricao": "Vindo de uma linhagem élfica das florestas antigas, mas separado dos seus — chegou sozinho a esse mundo, sem clã, sem floresta conhecida. Ágil e perceptivo, mas fisicamente mais frágil.",
+    "vida_max": 16,
+    "ataque": 5,
+    "defesa": 1,
+    "flag_racial": "raca_elfo",
+    "texto_criacao": "Seus sentidos são mais aguçados que os de um humano comum — você percebe pequenos detalhes que outros deixam passar. Mas isso também te deixa mais vulnerável: seu corpo não aguenta tantos golpes."
+  },
+  "anao": {
+    "nome_exibicao": "Anão",
+    "descricao": "De ascendência das fortalezas da Espinha do Mundo, mas sem nenhuma fortaleza à vista nesse lugar estranho. Resistente e forte, um pouco mais lento para confiar em desconhecidos.",
+    "vida_max": 26,
+    "ataque": 4,
+    "defesa": 4,
+    "flag_racial": "raca_anao",
+    "texto_criacao": "Seu corpo aguenta muito mais castigo do que a maioria. Anões não confiam fácil — séculos de história ensinaram isso — mas quando dão a palavra, cumprem."
+  },
+  "orc": {
+    "nome_exibicao": "Orc",
+    "descricao": "Nascido da energia mais instável da Fractura, carrega força bruta acima da média. Em muitas vilas humanas, é recebido com desconfiança só pela aparência.",
+    "vida_max": 24,
+    "ataque": 6,
+    "defesa": 1,
+    "flag_racial": "raca_orc",
+    "texto_criacao": "Sua força é evidente à primeira vista — e isso nem sempre é bem-vindo. Muitos vão te julgar antes de te conhecer. Isso pode pesar na sua jornada, mas também pode ser usado a seu favor."
+  },
+  "draconato": {
+    "nome_exibicao": "Draconato",
+    "descricao": "Carrega sangue dracônico nas veias — um eco distante dos Primeiros Dragões nascidos das feridas do mundo. Poucos em Eldoria já viram alguém como você; a maioria reage com espanto, medo, ou uma reverência desconfortável.",
+    "vida_max": 22,
+    "ataque": 5,
+    "defesa": 3,
+    "flag_racial": "raca_draconato",
+    "texto_criacao": "Escamas finas cobrem partes da sua pele, e seus olhos têm uma cor que nenhum humano tem naturalmente. Você não lembra de ter escolhido isso — só sabe que carrega algo mais antigo do que consegue entender."
+  }
+}

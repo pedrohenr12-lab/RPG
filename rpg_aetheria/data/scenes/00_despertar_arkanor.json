@@ -1,0 +1,14 @@
+{
+  "id": "00_despertar_arkanor",
+  "texto": "Você acorda em meio a uma plantação, o sol batendo forte e o cheiro de terra fértil no ar. Ao longe, sobre uma colina suave, uma cidade imensa se ergue — torres, muralhas, e o que só pode ser um palácio no centro de tudo. Comparado ao resto do mundo, esse lugar parece quase gentil demais.",
+  "opcoes": [
+    {
+      "texto": "Seguir em direção à cidade grande",
+      "destino": "01_arkanor_hub"
+    },
+    {
+      "texto": "Procurar primeiro por algum fazendeiro local",
+      "destino": "01_arkanor_hub"
+    }
+  ]
+}

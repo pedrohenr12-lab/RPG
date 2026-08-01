@@ -1,0 +1,19 @@
+{
+  "id": "01b_taverna",
+  "texto": "A taverna está cheia de vozes e cheiro de comida que você não pode pagar. Sem uma moeda no bolso, suas opções são limitadas.",
+  "opcoes": [
+    {
+      "texto": "Oferecer ajuda na cozinha em troca de uma refeição",
+      "efeitos": [
+        {"tipo": "flag", "valor": "nao_tem_orgulho"},
+        {"tipo": "cura", "valor": 5}
+      ],
+      "destino": "02_aprendendo_basico"
+    },
+    {
+      "texto": "Escutar rumores discretamente num canto",
+      "efeitos": [{"tipo": "flag", "valor": "ouviu_rumor_dragao"}],
+      "destino": "02_aprendendo_basico"
+    }
+  ]
+}

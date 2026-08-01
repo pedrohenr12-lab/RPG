@@ -1,0 +1,15 @@
+{
+  "id": "01d_elfo_arvore",
+  "texto": "Você se aproxima de uma árvore antiga na praça central da vila. As folhas se agitam sem vento algum, e por um instante — só um instante — você jura sentir algo parecido com reconhecimento, como se a árvore soubesse quem você é, mesmo você não sabendo de nada sobre si mesmo.",
+  "opcoes": [
+    {
+      "texto": "Ficar mais um tempo tentando entender a sensação",
+      "efeitos": [{"tipo": "flag", "valor": "conexao_natureza"}],
+      "destino": "01_vila_eldor"
+    },
+    {
+      "texto": "Se afastar, incomodado",
+      "destino": "01_vila_eldor"
+    }
+  ]
+}

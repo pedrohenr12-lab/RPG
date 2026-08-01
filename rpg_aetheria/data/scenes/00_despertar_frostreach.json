@@ -1,0 +1,21 @@
+{
+  "id": "00_despertar_frostreach",
+  "texto": "Você acorda sobre neve compacta, o frio cortando através das roupas simples que veste. O vento uiva entre rochas cobertas de gelo, e sua respiração forma nuvens brancas diante do rosto. Ao longe, entre a neblina gelada, você avista luzes bruxuleantes — a única coisa parecida com civilização à vista.",
+  "opcoes": [
+    {
+      "texto": "Se abrigar atrás de uma rocha antes de seguir",
+      "destino": "00b_frostreach_abrigo"
+    },
+    {
+      "texto": "Seguir direto em direção às luzes, apesar do frio",
+      "efeitos": [{"tipo": "dano", "valor": 3}],
+      "destino": "01_stonhelm_hub"
+    }
+  ]
+}
+
+
+
+
+
+

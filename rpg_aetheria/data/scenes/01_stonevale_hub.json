@@ -1,0 +1,27 @@
+{
+  "id": "01_stonevale_hub",
+  "texto": "A caravana pertence a uma comunidade mineradora nômade, sempre se movendo atrás dos veios de minério que ainda não secaram. Eles não confiam fácil em estranhos, mas também não recusam mãos extras — o trabalho aqui nunca acaba.",
+  "opcoes": [
+    {
+      "texto": "Oferecer ajuda em troca de passagem com a caravana",
+      "efeitos": [{"tipo": "flag", "valor": "regiao_stonevale"}],
+      "destino": "02_stonevale_caravana"
+    },
+    {
+      "texto": "Perguntar sobre o cânion que ninguém quer atravessar",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_stonevale"},
+        {"tipo": "flag", "valor": "ouviu_sobre_canion_proibido"}
+      ],
+      "destino": "02_stonevale_canion"
+    },
+    {
+      "texto": "Manter distância da caravana e seguir por conta própria",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_stonevale"},
+        {"tipo": "flag", "valor": "isolado_no_inicio"}
+      ],
+      "destino": "03_sinais_do_mundo"
+    }
+  ]
+}

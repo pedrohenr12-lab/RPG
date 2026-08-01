@@ -1,0 +1,15 @@
+{
+  "id": "03_sinais_do_mundo",
+  "texto": "Não importa onde você acordou nesse mundo, algo parece igual em todo lugar: pequenas coisas fora do lugar, gente que hesita antes de completar uma frase, fenômenos que ninguém consegue explicar direito mas que também ninguém parece muito disposto a investigar. Na noite seguinte, você tem um sonho estranho — uma figura distante, tecendo fios de luz e escuridão entre os dedos, num lugar que não parece existir em lugar nenhum do mundo desperto.",
+  "opcoes": [
+    {
+      "texto": "Acordar perturbado, tentando lembrar cada detalhe do sonho",
+      "efeitos": [{"tipo": "flag", "valor": "sonho_recorrente"}],
+      "destino": "04_decisao_de_caminho"
+    },
+    {
+      "texto": "Sacudir a sensação e seguir em frente como se nada fosse",
+      "destino": "04_decisao_de_caminho"
+    }
+  ]
+}

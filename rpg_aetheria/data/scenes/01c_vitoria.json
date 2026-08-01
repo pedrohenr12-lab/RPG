@@ -1,0 +1,14 @@
+{
+  "id": "01c_vitoria",
+  "texto": "O lobo cai derrotado. O fazendeiro, aliviado, te entrega uma faca velha mas afiada como agradecimento. \"Não é grande coisa, mas é sua.\"",
+  "opcoes": [
+    {
+      "texto": "Agradecer e seguir para a vila",
+      "efeitos": [
+        {"tipo": "item", "valor": "Faca Velha"},
+        {"tipo": "reputacao", "faccao": "vila_eldor", "valor": 10}
+      ],
+      "destino": "02_aprendendo_basico"
+    }
+  ]
+}

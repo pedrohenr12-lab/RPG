@@ -1,0 +1,21 @@
+{
+  "id": "04_decisao_de_caminho",
+  "texto": "Com ou sem respostas, a vida continua ao seu redor — mas você sente que precisa decidir, mesmo sem entender ainda o tamanho da escolha, que tipo de pessoa quer ser nesse mundo novo.",
+  "opcoes": [
+    {
+      "texto": "Focar em ajudar quem está por perto, não importa o custo",
+      "efeitos": [{"tipo": "flag", "valor": "caminho_comunitario"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Investigar os sinais estranhos por conta própria",
+      "efeitos": [{"tipo": "flag", "valor": "caminho_investigador"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Tentar viver uma vida normal e ignorar os sinais",
+      "efeitos": [{"tipo": "flag", "valor": "caminho_ignorou_sinais"}],
+      "destino": "fim_demo"
+    }
+  ]
+}

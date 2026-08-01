@@ -1,0 +1,24 @@
+{
+  "id": "01a_anciao",
+  "texto": "O Ancião ouve sua história em silêncio, sem parecer surpreso — como se já tivesse ouvido algo parecido antes. \"O mundo anda estranho ultimamente. Se quiser um teto e comida, posso te dar um pequeno favor a fazer.\"",
+  "opcoes": [
+    {
+      "texto": "Aceitar o favor em troca de ajuda",
+      "efeitos": [
+        {"tipo": "flag", "valor": "em_divida"},
+        {"tipo": "reputacao", "faccao": "vila_eldor", "valor": 10}
+      ],
+      "destino": "02_aprendendo_basico"
+    },
+    {
+      "texto": "Questionar por que ele ajudaria um estranho sem motivo",
+      "efeitos": [{"tipo": "flag", "valor": "desconfiado"}],
+      "destino": "02_aprendendo_basico"
+    },
+    {
+      "texto": "Recusar e tentar se virar sozinho",
+      "efeitos": [{"tipo": "flag", "valor": "sobrevivente_solitario"}],
+      "destino": "02_aprendendo_basico"
+    }
+  ]
+}

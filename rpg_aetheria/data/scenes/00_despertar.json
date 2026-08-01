@@ -1,0 +1,20 @@
+{
+  "id": "00_despertar",
+  "texto": "Você acorda deitado sobre a grama úmida, sem lembrança de como chegou ali. O céu acima tem uma cor estranha, quase errada. Suas mãos revistam o próprio corpo por instinto: nenhuma arma, nenhum item, nenhuma moeda. Só as roupas simples que você veste.",
+  "opcoes": [
+    {
+      "texto": "Revistar os arredores em busca de pistas",
+      "efeitos": [{"tipo": "flag", "valor": "curioso_com_mundo"}],
+      "destino": "00b_vestigio"
+    },
+    {
+      "texto": "Tentar se orientar pela posição do sol",
+      "efeitos": [{"tipo": "flag", "valor": "senso_de_direcao"}],
+      "destino": "01_vila_eldor"
+    },
+    {
+      "texto": "Gritar por ajuda",
+      "destino": "00c_encontrado"
+    }
+  ]
+}

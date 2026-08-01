@@ -1,0 +1,15 @@
+{
+  "id": "00_despertar_blackmarsh",
+  "texto": "Você acorda com os pés na água escura e morna de um pântano, neblina baixa cobrindo tudo além de alguns metros. O ar é pesado, quase doentio, e sons distantes de criaturas que você não consegue identificar ecoam entre a vegetação flutuante.",
+  "opcoes": [
+    {
+      "texto": "Seguir cuidadosamente por terreno mais firme",
+      "destino": "01_blackmarsh_hub"
+    },
+    {
+      "texto": "Seguir luzes fracas e coloridas que aparecem sobre a água",
+      "efeitos": [{"tipo": "dano", "valor": 4}],
+      "destino": "01_blackmarsh_hub"
+    }
+  ]
+}

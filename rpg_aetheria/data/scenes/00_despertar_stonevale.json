@@ -1,0 +1,15 @@
+{
+  "id": "00_despertar_stonevale",
+  "texto": "Você acorda sobre rocha rachada pelo sol, num platô árido cortado por cânions profundos. O calor é intenso, mas você sente que à noite será quase tão frio quanto o dia é quente. Ao longe, uma coluna de poeira sinaliza uma caravana em movimento.",
+  "opcoes": [
+    {
+      "texto": "Tentar alcançar a caravana antes que ela desapareça",
+      "destino": "01_stonevale_hub"
+    },
+    {
+      "texto": "Procurar sombra e água antes de se mover",
+      "efeitos": [{"tipo": "dano", "valor": 2}],
+      "destino": "01_stonevale_hub"
+    }
+  ]
+}

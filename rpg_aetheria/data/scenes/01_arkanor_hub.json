@@ -1,0 +1,27 @@
+{
+  "id": "01_arkanor_hub",
+  "texto": "A capital se abre diante de você: ruas de pedra bem cuidadas, guildas de comércio, guardas em cada esquina. Aqui, ninguém morre de fome ou de frio com facilidade — mas também ninguém te dá nada de graça sem que você prove seu lugar primeiro.",
+  "opcoes": [
+    {
+      "texto": "Tentar entrada nas guildas menores em busca de trabalho",
+      "efeitos": [{"tipo": "flag", "valor": "regiao_arkanor"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Observar de longe o movimento do Bairro Nobre",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_arkanor"},
+        {"tipo": "flag", "valor": "curioso_politica"}
+      ],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Evitar todo mundo e passar despercebido pelas ruas",
+      "efeitos": [
+        {"tipo": "flag", "valor": "regiao_arkanor"},
+        {"tipo": "flag", "valor": "isolado_no_inicio"}
+      ],
+      "destino": "fim_demo"
+    }
+  ]
+}

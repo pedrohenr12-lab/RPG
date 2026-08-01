@@ -1,0 +1,16 @@
+{
+  "id": "02_aprendendo_basico",
+  "texto": "Nos dias seguintes, você começa a entender melhor esse mundo: como funciona o comércio, quem manda em Eldoria e os primeiros rumores sobre criaturas estranhas ficando mais agressivas na floresta de Eldorwood.",
+  "opcoes": [
+    {
+      "texto": "Treinar combate básico com um morador",
+      "efeitos": [{"tipo": "flag", "valor": "treinou_combate"}],
+      "destino": "fim_demo"
+    },
+    {
+      "texto": "Perguntar sobre as outras raças do mundo",
+      "efeitos": [{"tipo": "flag", "valor": "conhece_racas"}],
+      "destino": "fim_demo"
+    }
+  ]
+}

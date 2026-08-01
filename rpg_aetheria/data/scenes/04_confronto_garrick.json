@@ -1,0 +1,19 @@
+{
+  "id": "04_confronto_garrick",
+  "texto": "Garrick escuta sua tentativa de explicação com expressão endurecida. 'Desculpas não trazem o minério de volta', snarla. Seus homens o cercam, esperando um sinal. Você está em grande desvantagem.",
+  "opcoes": [
+    {
+      "texto": "Fugir antes que seja tarde",
+      "efeitos": [{"tipo": "flag", "valor": "fugiu_de_garrick"}],
+      "destino": "04_fuga"
+    },
+    {
+      "texto": "Lutar mesmo assim",
+      "combate": {
+        "inimigo": {"nome": "Garrick e Aliados", "vida": 20, "ataque": 5, "defesa": 3},
+        "destino_vitoria": "04_confronto_vitoria",
+        "destino_derrota": "fim_derrota"
+      }
+    }
+  ]
+}

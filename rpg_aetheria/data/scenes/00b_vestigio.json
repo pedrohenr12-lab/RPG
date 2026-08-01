@@ -1,0 +1,15 @@
+{
+  "id": "00b_vestigio",
+  "texto": "Perto de onde você acordou, um símbolo estranho está gravado numa pedra coberta de musgo — algo entre uma escrita e um desenho, que você não reconhece de lugar nenhum. Olhando bem, percebe fumaça subindo ao longe, atrás das árvores.",
+  "opcoes": [
+    {
+      "texto": "Seguir em direção à fumaça",
+      "destino": "01_vila_eldor"
+    },
+    {
+      "texto": "Tentar copiar o símbolo antes de ir (pode ser importante depois)",
+      "efeitos": [{"tipo": "flag", "valor": "sabe_simbolo_antigo"}],
+      "destino": "01_vila_eldor"
+    }
+  ]
+}

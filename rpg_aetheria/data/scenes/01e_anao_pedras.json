@@ -1,0 +1,15 @@
+{
+  "id": "01e_anao_pedras",
+  "texto": "Você se agacha para examinar as pedras da fundação de uma das casas mais antigas da vila. O corte é preciso demais para ferramentas humanas comuns — um trabalho que parece anão, embora nenhum anão tenha vivido aqui, pelo que os moradores sabem.",
+  "opcoes": [
+    {
+      "texto": "Perguntar aos moradores sobre a origem das pedras",
+      "efeitos": [{"tipo": "flag", "valor": "sabe_origem_pedras"}],
+      "destino": "01_vila_eldor"
+    },
+    {
+      "texto": "Guardar essa observação para si mesmo",
+      "destino": "01_vila_eldor"
+    }
+  ]
+}
