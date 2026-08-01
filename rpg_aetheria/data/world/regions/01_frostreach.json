@@ -1,0 +1,39 @@
+{
+  "id": "frostreach",
+  "nome": "Frostreach",
+  "posicao": "Norte",
+  "area_km2": 38000000,
+  "clima": "Polar e Subpolar (−25°C a 8°C), vento constante",
+  "gravidade": 0.7,
+  "elementos": [
+    "Vynium",
+    "Pressium",
+    "Luminite",
+    "Symmetrium",
+    "Fractium"
+  ],
+  "subregioes": [
+    {
+      "id": "orla_costeira_do_gelo",
+      "nome": "Orla Costeira do Gelo",
+      "area_km2": 12000000,
+      "tipo": "Fiordes congelados, costa rochosa, água gelada",
+      "bioma": "Rochas escuras, gelo branco-azulado, falésias abruptas"
+    },
+    {
+      "id": "planalto_central",
+      "nome": "Planalto Central",
+      "area_km2": 14000000,
+      "tipo": "Tundra infinita, vegetação não-lenhosa",
+      "bioma": "Musgo congelado, solo compactado, formações de gelo"
+    },
+    {
+      "id": "presas_de_gelo",
+      "nome": "Presas de Gelo",
+      "area_km2": 12000000,
+      "tipo": "Cordilheira monumental, picos acima das nuvens",
+      "bioma": "Rochas nuas, glaciares profundos, cavernas de gelo"
+    }
+  ],
+  "historia": "Cicatrizes da Guerra dos Vorath. Antigo território do Rei Aldric Valthorn."
+}

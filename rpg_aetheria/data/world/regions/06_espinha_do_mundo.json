@@ -1,0 +1,39 @@
+{
+  "id": "espinha_do_mundo",
+  "nome": "A Espinha do Mundo",
+  "posicao": "Oeste",
+  "area_km2": 29000000,
+  "clima": "Alpino e extremo (−20°C a 18°C), ventos fortíssimos",
+  "gravidade": 0.7,
+  "elementos": [
+    "Pressium",
+    "Vynium",
+    "Luminite",
+    "Fractium",
+    "Harmonix"
+  ],
+  "subregioes": [
+    {
+      "id": "cordilheira_monumental",
+      "nome": "Cordilheira Monumental",
+      "area_km2": 15000000,
+      "tipo": "Picos que perfuram nuvens, elevações massivas",
+      "bioma": "Rocha nua, glaciares em altitude, neve permanente"
+    },
+    {
+      "id": "vales_profundos",
+      "nome": "Vales Profundos entre Picos",
+      "area_km2": 8000000,
+      "tipo": "Depressões entre montanhas, fossas naturais",
+      "bioma": "Vegetação limitada, rochas abruptas, sombra perpétua"
+    },
+    {
+      "id": "cavernas_gigantes",
+      "nome": "Cavernas Gigantes",
+      "area_km2": 6000000,
+      "tipo": "Sistema cavernoso massivo, subterrâneo profundo",
+      "bioma": "Escuridão total, cristais bioluminescentes, fungos adaptados"
+    }
+  ],
+  "historia": "Território ancestral dos Anões. Possível refúgio residual dos Vorath."
+}

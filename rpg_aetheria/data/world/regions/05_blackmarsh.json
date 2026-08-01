@@ -1,0 +1,39 @@
+{
+  "id": "blackmarsh",
+  "nome": "Blackmarsh",
+  "posicao": "Sul",
+  "area_km2": 32000000,
+  "clima": "Tropical úmido e quente (24°C a 38°C), chuvas torrenciais",
+  "gravidade": 0.7,
+  "elementos": [
+    "Aquanium",
+    "Luminite",
+    "Harmonix",
+    "Botanium",
+    "Patterium"
+  ],
+  "subregioes": [
+    {
+      "id": "pantanos_vastos",
+      "nome": "Pântanos Vastos",
+      "area_km2": 14000000,
+      "tipo": "Pântano denso, água lodosa, vegetação flutuante",
+      "bioma": "Água marrom-preta, vegetação aquática, raízes submersas"
+    },
+    {
+      "id": "mangues_gigantes",
+      "nome": "Mangues Gigantes",
+      "area_km2": 10000000,
+      "tipo": "Costeira pantanosa, floresta de raízes aéreas",
+      "bioma": "Raízes enormes acima da água, lama de sedimento fino"
+    },
+    {
+      "id": "ilhas_flutuantes",
+      "nome": "Ilhas de Vegetação Flutuante",
+      "area_km2": 8000000,
+      "tipo": "Terra instável, ilhas que se movem",
+      "bioma": "Vegetação densa sobre turfa, plantas venenosas potenciais"
+    }
+  ],
+  "historia": "Local da Batalha das Fendas. Ainda carrega anomalias da Guerra."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "eldorwood",
+  "nome": "Eldorwood",
+  "posicao": "Nordeste",
+  "area_km2": 36000000,
+  "clima": "Frio úmido e temperado (4°C a 20°C), neblina frequente",
+  "gravidade": 0.7,
+  "elementos": [
+    "Botanium",
+    "Herbium",
+    "Aquanium",
+    "Circulium",
+    "Patterium"
+  ],
+  "subregioes": [
+    {
+      "id": "floresta_densa_antiga",
+      "nome": "Floresta Densa Antiga",
+      "area_km2": 14000000,
+      "tipo": "Floresta boreal densa, árvores altas e sombrias",
+      "bioma": "Dossel denso, solo de musgos e folhas, penumbra constante"
+    },
+    {
+      "id": "pantanos_e_rios",
+      "nome": "Pântanos e Rios",
+      "area_km2": 12000000,
+      "tipo": "Pântanos baixos, rios meandrantes, ilhas de vegetação flutuante",
+      "bioma": "Água lodosa, musgo espesso, raízes retorcidas submersas"
+    },
+    {
+      "id": "colinas_arborizadas",
+      "nome": "Colinas Arborizadas",
+      "area_km2": 10000000,
+      "tipo": "Transição entre floresta e planície, morros baixos",
+      "bioma": "Vegetação mista, clareiras naturais, bosques dispersos"
+    }
+  ],
+  "historia": "Aliada de Rei Elandor Sylvane durante a Guerra dos Vorath."
+}

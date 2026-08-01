@@ -1,0 +1,39 @@
+{
+  "id": "stonevale",
+  "nome": "Stonevale",
+  "posicao": "Sudeste",
+  "area_km2": 35000000,
+  "clima": "Semiárido e quente (15°C a 35°C), grande variação dia-noite",
+  "gravidade": 0.7,
+  "elementos": [
+    "Silicyn",
+    "Fractium",
+    "Patterium",
+    "Aquanium",
+    "Botanium"
+  ],
+  "subregioes": [
+    {
+      "id": "platos_aridos",
+      "nome": "Platôs Áridos",
+      "area_km2": 15000000,
+      "tipo": "Platôs de rocha nua, colinas secas",
+      "bioma": "Rocha exposta, vegetação mínima, solo rochoso"
+    },
+    {
+      "id": "canyons_profundos",
+      "nome": "Cânions Profundos",
+      "area_km2": 12000000,
+      "tipo": "Erosão profunda, ravinas de água seca",
+      "bioma": "Paredes de rocha, leitos de rio secos, vegetação em fendas"
+    },
+    {
+      "id": "vales_ferteis_isolados",
+      "nome": "Vales Férteis Isolados",
+      "area_km2": 8000000,
+      "tipo": "Depressões entre platôs, oásis naturais",
+      "bioma": "Vegetação densa em vales, água permanente"
+    }
+  ],
+  "historia": "Sofreu ataques demoníacos diretos. Possui um cânion proibido."
+}

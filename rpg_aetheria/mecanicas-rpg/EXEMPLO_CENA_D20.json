@@ -1,0 +1,17 @@
+{
+  "id": "exemplo_fogueira",
+  "texto": "A chuva deixou toda a madeira úmida. Sem fogo, a noite da floresta será longa.",
+  "opcoes": [{
+    "texto": "Tentar acender uma fogueira com gravetos e casca seca",
+    "efeitos": [{"tipo": "tempo", "valor": 1}],
+    "teste": {
+      "nome": "Acender fogueira",
+      "atributo": "sobrevivencia",
+      "dificuldade": 12,
+      "destino_sucesso": "fogueira_acesa",
+      "destino_falha": "fogueira_fumegante",
+      "efeitos_sucesso": [{"tipo": "energia", "valor": 10}, {"tipo": "temperatura", "valor": 2}, {"tipo": "flag", "valor": "fogueira_acesa"}],
+      "efeitos_falha": [{"tipo": "energia", "valor": -8}, {"tipo": "dano", "valor": 1}, {"tipo": "flag", "valor": "madeira_perdida"}]
+    }
+  }]
+}

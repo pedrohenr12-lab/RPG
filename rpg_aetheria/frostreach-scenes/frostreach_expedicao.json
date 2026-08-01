@@ -1,0 +1,413 @@
+[
+  {
+    "id": "00a_vento_branco",
+    "texto": "A nevasca fecha o mundo ao redor de você. Por longos minutos, Stonhelm desaparece e só restam o ruído do vento, o peso das suas próprias pernas e a sensação de que algo se move fora de vista. Quando a tormenta abre por um instante, você vê uma torre de vigia e dois vultos com lanças fazendo sinais na encosta.",
+    "opcoes": [
+      {
+        "texto": "Responder ao sinal e aproximar-se dos vultos com as mãos visíveis",
+        "destino": "00c_patrulha_do_norte"
+      },
+      {
+        "texto": "Seguir sozinho pela estrada de marcos de pedra até a cidade",
+        "efeitos": [{"tipo": "dano", "valor": 1}],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "00a_rastros_na_neve",
+    "texto": "As pegadas humanas pertencem a pelo menos duas pessoas. Uma delas manca; a outra carregava um trenó leve. As marcas de patas não são de lobos comuns: são largas demais, com garras profundas e intervalos longos entre os passos. A trilha humana segue para a torre de vigia. A trilha animal desaparece atrás de uma carroça tombada, quase soterrada.",
+    "opcoes": [
+      {
+        "texto": "Seguir as pegadas humanas até a torre de vigia",
+        "efeitos": [{"tipo": "flag", "valor": "seguiu_rastros_da_patrulha"}],
+        "destino": "00c_patrulha_do_norte"
+      },
+      {
+        "texto": "Investigar a carroça tombada antes que os animais retornem",
+        "destino": "00a_carga_congelada"
+      }
+    ]
+  },
+  {
+    "id": "00a_aurora_quebrada",
+    "texto": "A aurora se reflete em uma parede de gelo rachada. Dentro dela, veios azul-violeta formam círculos quase perfeitos e vibram com um som baixo, parecido com uma voz muito distante. Quando você se aproxima, um fragmento se solta e cai na neve sem derreter.\n\nPor um segundo, uma lembrança impossível atravessa sua mente: uma porta de pedra, pessoas correndo e a mesma luz azul pulsando sob seus pés.",
+    "opcoes": [
+      {
+        "texto": "Guardar o fragmento e tentar entender a lembrança depois",
+        "efeitos": [
+          {"tipo": "item", "valor": "Fragmento de Luminite Fria"},
+          {"tipo": "flag", "valor": "viu_aurora_quebrada"}
+        ],
+        "destino": "00c_patrulha_do_norte"
+      },
+      {
+        "texto": "Deixar o fragmento onde está e procurar a rota mais segura",
+        "efeitos": [{"tipo": "flag", "valor": "resistiu_ao_chamado_da_aurora"}],
+        "destino": "00c_patrulha_do_norte"
+      }
+    ]
+  },
+  {
+    "id": "00a_carga_congelada",
+    "texto": "Sob a neve há uma carroça de suprimentos partida ao meio. Sacos de farinha foram rasgados, mas um caixote de couro permanece preso sob o eixo. Dentro, você encontra um manto de pele ainda seco e uma pequena marca de Stonhelm que identifica a carga como propriedade da cidade. Ao longe, um uivo responde a outro.",
+    "opcoes": [
+      {
+        "texto": "Vestir o manto e levar a marca de carga para Stonhelm",
+        "efeitos": [
+          {"tipo": "item", "valor": "Manto de Pele de Lobo"},
+          {"tipo": "flag", "valor": "encontrou_carga_perdida"}
+        ],
+        "destino": "00c_patrulha_do_norte"
+      },
+      {
+        "texto": "Deixar os suprimentos, marcar o local e correr para a patrulha",
+        "efeitos": [{"tipo": "flag", "valor": "marcou_carga_perdida"}],
+        "destino": "00c_patrulha_do_norte"
+      }
+    ]
+  },
+  {
+    "id": "00c_patrulha_do_norte",
+    "texto": "Dois guardas surgem da névoa: Nara, uma batedora de olhar duro, e Brok, um anão enorme que segura uma lança como se fosse um cajado. Eles não baixam as armas ao ver você. Nara pergunta de onde veio; Brok observa suas roupas, seus pés e a neve atrás de você.\n\nA patrulha encontrou uma carroça atacada e procura uma criança desaparecida desde o amanhecer. Em Frostreach, coincidências raramente são inocentes.",
+    "opcoes": [
+      {
+        "texto": "Contar tudo o que viu e pedir orientação para chegar a Stonhelm",
+        "efeitos": [
+          {"tipo": "flag", "valor": "confiou_em_nara"},
+          {"tipo": "reputacao", "faccao": "stonhelm", "valor": 3}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Ocultar a aurora e dizer apenas que acordou perdido na neve",
+        "efeitos": [
+          {"tipo": "flag", "valor": "escondeu_visao_da_aurora"},
+          {"tipo": "reputacao", "faccao": "stonhelm", "valor": -2}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Entregar a marca da carroça e avisar que os uivos estavam próximos",
+        "condicao": {"tem_flag": "encontrou_carga_perdida"},
+        "efeitos": [{"tipo": "reputacao", "faccao": "stonhelm", "valor": 5}],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "02_salao_dos_anciaos",
+    "texto": "O Salão dos Anciãos é quente demais depois da rua. Tapeçarias de clãs antigos cobrem as paredes, e no centro arde um braseiro alimentado por carvão azul. A anciã Sigrid escuta sua história sem interromper. Quando você menciona ter acordado na planície, ela troca um olhar silencioso com um escriba.\n\nUm explorador chamado Haldor desapareceu perto das Cavernas de Eco, levando um mapa de rotas antigas. Sigrid não promete respostas, mas diz que pessoas perdidas às vezes encontram o que a cidade procura.",
+    "opcoes": [
+      {
+        "texto": "Aceitar procurar Haldor nas Cavernas de Eco",
+        "efeitos": [
+          {"tipo": "flag", "valor": "missao_haldor_aceita"},
+          {"tipo": "reputacao", "faccao": "anciaos_stonhelm", "valor": 5}
+        ],
+        "destino": "03_cavernas_de_eco"
+      },
+      {
+        "texto": "Perguntar se a aurora azul tem ligação com seu despertar",
+        "condicao": {"tem_flag": "viu_aurora_quebrada"},
+        "efeitos": [{"tipo": "flag", "valor": "anciaos_conhecem_a_aurora"}],
+        "destino": "03_cavernas_de_eco"
+      },
+      {
+        "texto": "Recusar o pedido por enquanto e voltar às ruas",
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "02_estalagem_neve_partida",
+    "texto": "A Estalagem da Neve Partida é barulhenta, apertada e viva. Caçadores discutem sobre trilhas, mercadores discutem sobre preços e alguém toca uma flauta desafinada perto do fogo. A proprietária, Maeve, serve uma tigela de sopa sem perguntar se você pode pagar. Em troca, quer saber o que trouxe um desconhecido para o norte.\n\nEntre as conversas, você ouve dois rumores: uma rota de suprimentos foi saqueada e alguém viu luzes se movendo sob o gelo do lago.",
+    "opcoes": [
+      {
+        "texto": "Ajudar Maeve a servir mesas em troca de comida e informações",
+        "efeitos": [
+          {"tipo": "cura", "valor": 3},
+          {"tipo": "flag", "valor": "favor_de_maeve"},
+          {"tipo": "reputacao", "faccao": "stonhelm", "valor": 2}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Perguntar pela rota de suprimentos saqueada",
+        "destino": "03_rota_de_suprimentos"
+      },
+      {
+        "texto": "Ouvir em silêncio a conversa sobre as luzes sob o lago",
+        "destino": "03_lago_sem_fundo"
+      }
+    ]
+  },
+  {
+    "id": "02_acampamento_dos_mineradores",
+    "texto": "Ao sul de Stonhelm, guindastes rangem sobre uma mina aberta na encosta. Os mineradores extraem Pressium e Vynium das camadas profundas, mas o trabalho parou: uma galeria inferior cedeu e três trabalhadores ficaram presos atrás de uma porta de contenção. O capataz Orven precisa de alguém que entre por uma passagem estreita demais para seus homens carregados de equipamento.",
+    "opcoes": [
+      {
+        "texto": "Descer à galeria inferior e procurar os trabalhadores presos",
+        "efeitos": [{"tipo": "flag", "valor": "aceitou_resgate_da_mina"}],
+        "destino": "03_galeria_em_colapso"
+      },
+      {
+        "texto": "Ajudar a reforçar o guindaste e organizar a equipe do lado de fora",
+        "efeitos": [
+          {"tipo": "flag", "valor": "ajudou_mineradores"},
+          {"tipo": "reputacao", "faccao": "mineradores_stonhelm", "valor": 4}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Recusar o risco e procurar outra forma de ganhar confiança na cidade",
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "02_portao_norte",
+    "texto": "O Portão Norte dá para uma estrada estreita entre muralhas de gelo. Caravanas entram em fila, tendo suas cargas inspecionadas antes que a tempestade feche o caminho. Nara está ali, discutindo com uma mulher desesperada: seu filho, Tovin, desapareceu perto de um santuário abandonado. Brok acredita que os rastros de lobo vistos pela manhã não pertencem a animais comuns.",
+    "opcoes": [
+      {
+        "texto": "Acompanhar Nara na busca por Tovin",
+        "efeitos": [{"tipo": "flag", "valor": "busca_por_tovin"}],
+        "destino": "03_busca_por_tovin"
+      },
+      {
+        "texto": "Oferecer a marca da carroça como prova de que a estrada não é segura",
+        "condicao": {"tem_flag": "encontrou_carga_perdida"},
+        "efeitos": [{"tipo": "reputacao", "faccao": "patrulha_do_norte", "valor": 4}],
+        "destino": "03_busca_por_tovin"
+      },
+      {
+        "texto": "Pedir permissão para apenas observar a estrada e voltar depois",
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "02_becos_de_stonhelm",
+    "texto": "Nos becos de Stonhelm, a cidade parece menos segura. Crianças passam correndo entre barris, coletores de carvão dormem perto de saídas de vapor e comerciantes escondem mercadorias sob lonas grossas. Você vê um homem de capuz trocar uma bolsa por um mapa enrolado; logo depois, dois guardas aparecem procurando exatamente alguém com aquele capuz.\n\nO homem percebe que foi visto. Por um instante, vocês dois sabem que uma escolha será lembrada.",
+    "opcoes": [
+      {
+        "texto": "Avisar os guardas sobre o homem do capuz",
+        "efeitos": [{"tipo": "reputacao", "faccao": "stonhelm", "valor": 3}],
+        "destino": "03_rota_de_suprimentos"
+      },
+      {
+        "texto": "Seguir o homem em silêncio para descobrir o que há no mapa",
+        "efeitos": [{"tipo": "flag", "valor": "seguiu_o_contrabandista"}],
+        "destino": "03_rota_de_suprimentos"
+      },
+      {
+        "texto": "Ignorar o encontro e não se envolver",
+        "efeitos": [{"tipo": "flag", "valor": "evitou_problemas_em_stonhelm"}],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "03_cavernas_de_eco",
+    "texto": "A entrada das Cavernas de Eco fica escondida atrás de uma cascata congelada. Lá dentro, cristais de Luminite iluminam o gelo com tons verdes e violeta. Cada passo retorna para você em vozes diferentes: algumas parecem ser suas; outras pronunciam nomes que você nunca ouviu.\n\nVocê encontra a mochila de Haldor ao lado de três túneis. Um desce em direção a um som de respiração fraca, outro leva a inscrições circulares e o terceiro está bloqueado por gelo fino que pode ruir a qualquer momento.",
+    "opcoes": [
+      {
+        "texto": "Seguir a respiração e procurar Haldor",
+        "efeitos": [{"tipo": "flag", "valor": "procurou_haldor"}],
+        "destino": "04_haldor_encontrado"
+      },
+      {
+        "texto": "Estudar as inscrições circulares antes de continuar",
+        "efeitos": [{"tipo": "flag", "valor": "estudou_inscricoes_de_eco"}],
+        "destino": "04_inscricoes_de_eco"
+      },
+      {
+        "texto": "Voltar a Stonhelm antes de se perder nas vozes",
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "03_rota_de_suprimentos",
+    "texto": "A rota de suprimentos corta um vale estreito, cercado por paredes de gelo azul. A carroça saqueada que você encontrou é só a primeira: há sinais de pelo menos três ataques, todos organizados demais para lobos. Perto de uma ponte, você vê o homem do capuz discutindo com caçadores armados. Eles carregam caixas marcadas com o selo de Stonhelm.\n\nUma neblina baixa se aproxima pelo vale. Se houver uma emboscada, ela começará quando a ponte desaparecer de vista.",
+    "opcoes": [
+      {
+        "texto": "Avisar os caçadores e tentar impedir o confronto",
+        "efeitos": [{"tipo": "flag", "valor": "tentou_evitar_emboscada"}],
+        "destino": "04_ponte_de_gelo"
+      },
+      {
+        "texto": "Esconder-se e observar quem dá a primeira ordem",
+        "efeitos": [{"tipo": "flag", "valor": "observou_contrabandistas"}],
+        "destino": "04_ponte_de_gelo"
+      },
+      {
+        "texto": "Retornar a Stonhelm com as informações antes de correr um risco maior",
+        "efeitos": [{"tipo": "reputacao", "faccao": "stonhelm", "valor": 2}],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "03_lago_sem_fundo",
+    "texto": "O lago fica além das últimas casas, coberto por uma camada de gelo escuro e transparente. Sob ele, luzes azuladas se movem em padrões lentos, como estrelas aprisionadas. Um pescador idoso diz que a cada inverno alguém tenta quebrar o gelo para alcançar as luzes — e que ninguém volta igual.\n\nNo centro do lago, você vê uma silhueta que pode ser uma pessoa, uma estátua ou apenas uma sombra deformada pela água profunda.",
+    "opcoes": [
+      {
+        "texto": "Marcar o local e contar aos Anciãos o que viu",
+        "efeitos": [{"tipo": "flag", "valor": "descobriu_luzes_no_lago"}],
+        "destino": "02_salao_dos_anciaos"
+      },
+      {
+        "texto": "Tocar o gelo e seguir a luz mais próxima",
+        "efeitos": [
+          {"tipo": "dano", "valor": 2},
+          {"tipo": "flag", "valor": "tocou_lago_sem_fundo"}
+        ],
+        "destino": "04_inscricoes_de_eco"
+      },
+      {
+        "texto": "Deixar o lago em paz e voltar à cidade",
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "03_galeria_em_colapso",
+    "texto": "A galeria inferior é quente, úmida e instável. Vapor sobe de rachaduras no chão, e o brilho do Pressium exposto faz as paredes parecerem respirar. Você encontra dois mineradores feridos atrás de uma viga caída; o terceiro, porém, está desaparecido mais fundo no túnel. Então um ruído pesado vem da escuridão — pedras se movendo, ou algo que vive entre elas.",
+    "opcoes": [
+      {
+        "texto": "Ajudar os dois feridos a sair, deixando o desaparecido para uma segunda busca",
+        "efeitos": [
+          {"tipo": "flag", "valor": "salvou_dois_mineradores"},
+          {"tipo": "reputacao", "faccao": "mineradores_stonhelm", "valor": 6}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Avançar sozinho para procurar o terceiro minerador",
+        "efeitos": [{"tipo": "flag", "valor": "entrou_na_fenda_profunda"}],
+        "destino": "04_haldor_encontrado"
+      },
+      {
+        "texto": "Recuar e pedir reforços antes que a galeria desabe",
+        "efeitos": [{"tipo": "reputacao", "faccao": "mineradores_stonhelm", "valor": 1}],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "03_busca_por_tovin",
+    "texto": "Os rastros de Tovin levam até um santuário antigo, meio enterrado na neve. Nara encontra uma luva infantil presa a um espinho de gelo. Brok encontra as mesmas pegadas de garras que você viu na planície. Dentro do santuário, uma pequena voz chama por ajuda; do lado de fora, um rosnado grave responde.\n\nNara pede que você escolha: entrar para salvar a criança ou ficar do lado de fora para impedir que a criatura bloqueie a saída.",
+    "opcoes": [
+      {
+        "texto": "Entrar no santuário e procurar Tovin",
+        "efeitos": [{"tipo": "flag", "valor": "entrou_no_santuario_de_tovin"}],
+        "destino": "04_tovin_encontrado"
+      },
+      {
+        "texto": "Ficar com Brok e enfrentar o Lobo de Gelo quando ele aparecer",
+        "destino": "03_lobo_de_gelo"
+      },
+      {
+        "texto": "Pedir que Nara entre enquanto você prepara uma rota de fuga",
+        "efeitos": [{"tipo": "flag", "valor": "preparou_rota_de_fuga_para_tovin"}],
+        "destino": "04_tovin_encontrado"
+      }
+    ]
+  },
+  {
+    "id": "03_lobo_de_gelo",
+    "texto": "O Lobo de Gelo emerge da nevasca sem fazer som. É maior que um cavalo pequeno, com pelo branco endurecido por cristais e olhos azuis demais para serem naturais. Ele não ataca imediatamente; observa você, Brok e a entrada do santuário como se escolhesse qual de vocês pertence à caçada.",
+    "combate": {
+      "inimigo": {
+        "nome": "Lobo de Gelo",
+        "vida": 16,
+        "ataque": 5,
+        "defesa": 2
+      },
+      "destino_vitoria": "04_tovin_encontrado",
+      "destino_derrota": "fim_derrota"
+    }
+  },
+  {
+    "id": "04_haldor_encontrado",
+    "texto": "Você encontra Haldor preso sob uma camada de gelo fino, consciente por pouco. Ao lado dele está o mapa que os Anciãos procuravam e uma pedra circular coberta pelas mesmas marcas vistas na aurora. Haldor insiste que algo o chamou para dentro da caverna; agora, quer destruir a pedra antes que a voz encontre outro viajante.\n\nO mapa, porém, mostra uma rota para ruínas que ninguém em Stonhelm menciona.",
+    "opcoes": [
+      {
+        "texto": "Salvar Haldor e levar o mapa aos Anciãos",
+        "efeitos": [
+          {"tipo": "flag", "valor": "salvou_haldor"},
+          {"tipo": "item", "valor": "Mapa das Ruínas do Norte"},
+          {"tipo": "reputacao", "faccao": "anciaos_stonhelm", "valor": 8}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Examinar a pedra circular antes de tomar uma decisão",
+        "efeitos": [{"tipo": "flag", "valor": "tocou_pedra_circular_de_haldor"}],
+        "destino": "04_inscricoes_de_eco"
+      }
+    ]
+  },
+  {
+    "id": "04_inscricoes_de_eco",
+    "texto": "As inscrições não são uma língua, mas respondem quando você se aproxima. Linhas de luz percorrem a pedra e formam três símbolos: uma montanha, uma cidade e uma porta sob a água. A visão da aurora retorna, agora acompanhada por uma palavra que você não consegue repetir depois de ouvi-la.\n\nQuando a luz desaparece, algo mudou. Você não tem uma resposta, mas tem uma direção — e a certeza de que Frostreach guarda uma parte do seu passado.",
+    "opcoes": [
+      {
+        "texto": "Registrar os símbolos mentalmente e procurar respostas em Stonhelm",
+        "efeitos": [{"tipo": "flag", "valor": "possui_memoria_das_inscricoes"}],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Destruir as inscrições para impedir que chamem outra pessoa",
+        "efeitos": [{"tipo": "flag", "valor": "destruiu_inscricoes_de_eco"}],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "04_ponte_de_gelo",
+    "texto": "A névoa fecha a ponte. Vozes surgem dos dois lados: os caçadores acusam o homem do capuz de roubar suprimentos; ele acusa Stonhelm de deixar povoados menores passarem fome. Então uma rachadura corta o gelo sob os pés de todos. O que parecia uma emboscada pode se tornar um desastre em segundos.\n\nNinguém ali é completamente inocente, mas todos podem morrer se a ponte cair.",
+    "opcoes": [
+      {
+        "texto": "Ajudar a retirar as caixas e as pessoas da ponte antes de discutir culpados",
+        "efeitos": [
+          {"tipo": "flag", "valor": "salvou_pessoas_na_ponte"},
+          {"tipo": "reputacao", "faccao": "stonhelm", "valor": 4}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Exigir que o homem do capuz entregue o mapa em troca de ajuda",
+        "efeitos": [
+          {"tipo": "item", "valor": "Mapa de Rotas Secretas"},
+          {"tipo": "flag", "valor": "fez_acordo_com_contrabandista"},
+          {"tipo": "reputacao", "faccao": "stonhelm", "valor": -3}
+        ],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  },
+  {
+    "id": "04_tovin_encontrado",
+    "texto": "Tovin está escondido atrás do altar quebrado, tremendo mas vivo. Ao lado dele há uma pequena fenda no chão, de onde sobe ar quente e um brilho azul igual ao da aurora. A criança diz ter seguido uma voz que prometeu mostrar onde seu pai desapareceu anos atrás. Nara quer levá-lo embora imediatamente; Brok quer selar a fenda antes que algo saia dela.\n\nTovin segura sua mão e pergunta se a voz voltará.",
+    "opcoes": [
+      {
+        "texto": "Levar Tovin para casa e prometer que ninguém voltará sozinho à fenda",
+        "efeitos": [
+          {"tipo": "flag", "valor": "salvou_tovin"},
+          {"tipo": "reputacao", "faccao": "patrulha_do_norte", "valor": 7}
+        ],
+        "destino": "01_stonhelm_hub"
+      },
+      {
+        "texto": "Pedir a Brok que sele a fenda enquanto você observa os símbolos por um instante",
+        "efeitos": [
+          {"tipo": "flag", "valor": "viu_fenda_do_santuario"},
+          {"tipo": "dano", "valor": 1}
+        ],
+        "destino": "01_stonhelm_hub"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "arkanor",
+  "nome": "Arkanor",
+  "posicao": "Central",
+  "area_km2": 30000000,
+  "clima": "Temperado ideal (8°C a 26°C), 4 estações equilibradas",
+  "gravidade": 0.7,
+  "elementos": [
+    "Botanium",
+    "Aquanium",
+    "Circulium",
+    "Symmetrium"
+  ],
+  "subregioes": [
+    {
+      "id": "planicies_ferteis",
+      "nome": "Planícies Férteis",
+      "area_km2": 16000000,
+      "tipo": "Campos intermináveis, solo escuro e rico",
+      "bioma": "Gramíneas altas, arbustos dispersos, horizontes livres"
+    },
+    {
+      "id": "colinas_suaves",
+      "nome": "Colinas Suaves",
+      "area_km2": 8000000,
+      "tipo": "Morros ondulantes, vales entre elevações",
+      "bioma": "Vegetação mista, arbustos frutíferos, pequenos bosques"
+    },
+    {
+      "id": "vales_verdes",
+      "nome": "Vales Verdes",
+      "area_km2": 6000000,
+      "tipo": "Depressões entre colinas, rios navegáveis principais",
+      "bioma": "Vegetação densa riverside, formações de água em cascata"
+    }
+  ],
+  "historia": "Coração econômico e político de Eldoria. Sede da capital."
+}

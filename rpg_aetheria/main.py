@@ -1,10 +1,6 @@
 """
 main.py
-
-Ponto de entrada do jogo. Carrega as cenas, cria o estado inicial do
-jogador e roda o laço principal: mostra a cena atual, processa a
-escolha (ou o combate, se a cena tiver um), e vai para a próxima cena
-— até chegar numa cena sem opções (um final).
+Ponto de entrada do jogo — compatível com o combate atualizado (Etapa 1).
 """
 
 import os
@@ -20,8 +16,6 @@ PASTA_CENAS = os.path.join(os.path.dirname(__file__), "data", "scenes")
 ARQUIVO_RACAS = os.path.join(os.path.dirname(__file__), "data", "characters", "races.json")
 ARQUIVO_INTRO_MUNDO = os.path.join(os.path.dirname(__file__), "data", "lore", "intro_mundo.txt")
 
-# Cada região aponta pra sua própria cena de despertar. O spawn é
-# sorteado entre elas — o jogador não escolhe onde cai nesse mundo.
 REGIOES = {
     "frostreach": {
         "nome_exibicao": "Frostreach, as Terras do Gelo Eterno",
@@ -51,27 +45,21 @@ REGIOES = {
 
 
 def sortear_regiao_inicial(estado: GameState) -> None:
-    """Sorteia em qual região o personagem desperta e ajusta o estado."""
     chave_regiao = random.choice(list(REGIOES.keys()))
     dados_regiao = REGIOES[chave_regiao]
-
     estado.cena_atual = dados_regiao["cena_inicial"]
     estado.adicionar_flag(f"spawn_{chave_regiao}")
-
     print("\n" + "-" * 60)
     print(f"O destino te jogou em: {dados_regiao['nome_exibicao']}")
     print("-" * 60)
 
 
 def processar_cena_de_combate(cena: dict, estado: GameState) -> str:
-    """Roda o combate definido numa cena e decide a próxima cena pelo resultado."""
     print("\n" + "=" * 60)
     print(cena["texto"])
     print("=" * 60)
-
     info_combate = cena["combate"]
     venceu = combate(estado, info_combate["inimigo"])
-
     if venceu:
         return info_combate["destino_vitoria"]
     else:
@@ -79,10 +67,8 @@ def processar_cena_de_combate(cena: dict, estado: GameState) -> str:
 
 
 def mostrar_intro_mundo(caminho_arquivo: str) -> None:
-    """Mostra o texto de contexto do mundo antes da criação do personagem."""
     with open(caminho_arquivo, "r", encoding="utf-8") as f:
         texto = f.read()
-
     print("\n" + "=" * 60)
     print("  O MUNDO DE AETHERIA")
     print("=" * 60)
@@ -91,16 +77,17 @@ def mostrar_intro_mundo(caminho_arquivo: str) -> None:
 
 
 def escolher_raca(racas: dict) -> str:
-    """Mostra as raças disponíveis e devolve o id da raça escolhida."""
     ids_racas = list(racas.keys())
-
     print("\nEscolha sua raça:")
     for i, id_raca in enumerate(ids_racas, start=1):
         dados = racas[id_raca]
+        vida = dados.get("vida_max", 20)
+        atk = dados.get("ataque", 4)
+        def_ = dados.get("defesa", 2)
+        mana = dados.get("mana_max", 10)
         print(f"\n{i}. {dados['nome_exibicao']}")
         print(f"   {dados['descricao']}")
-        print(f"   (Vida: {dados['vida_max']} | Ataque: {dados['ataque']} | Defesa: {dados['defesa']})")
-
+        print(f"   (Vida: {vida} | Ataque: {atk} | Defesa: {def_} | Mana: {mana})")
     escolha = None
     while escolha is None:
         bruto = input("\n> Escolha uma raça: ").strip()
@@ -108,35 +95,37 @@ def escolher_raca(racas: dict) -> str:
             escolha = ids_racas[int(bruto) - 1]
         else:
             print("Opção inválida, tente de novo.")
-
     return escolha
 
 
 def criar_personagem(racas: dict) -> GameState:
     nome = input("\nComo se chama o seu personagem? ").strip() or "Herói"
     id_raca = escolher_raca(racas)
-    dados_raca = racas[id_raca]
+    dados = racas[id_raca]
 
     estado = GameState(
         nome=nome,
         raca=id_raca,
-        vida_max=dados_raca["vida_max"],
-        vida=dados_raca["vida_max"],
-        ataque=dados_raca["ataque"],
-        defesa=dados_raca["defesa"],
+        vida_max=dados.get("vida_max", 20),
+        vida=dados.get("vida_max", 20),
+        mana_max=dados.get("mana_max", 10),
+        mana=dados.get("mana_max", 10),
+        ataque=dados.get("ataque", 4),
+        defesa=dados.get("defesa", 2),
+        velocidade=dados.get("velocidade", 5),
+        chance_critico=dados.get("chance_critico", 0.10),
     )
-    estado.adicionar_flag(dados_raca["flag_racial"])
+    estado.adicionar_flag(dados["flag_racial"])
 
     print("\n" + "-" * 60)
-    print(dados_raca["texto_criacao"])
+    print(dados["texto_criacao"])
     print("-" * 60)
-
     return estado
 
 
 def main():
     print("=" * 60)
-    print("  AETHERIA — Demo do Motor de RPG")
+    print("  AETHERIA — RPG de Turnos")
     print("=" * 60)
 
     racas = carregar_racas(ARQUIVO_RACAS)
@@ -164,7 +153,7 @@ def main():
             print("\nVocê não sobreviveu à jornada...")
             break
 
-    print("\nObrigado por jogar essa demo!")
+    print("\nObrigado por jogar!")
     print(f"Flags acumuladas: {sorted(estado.flags)}")
     print(f"Itens: {estado.inventario}")
 
