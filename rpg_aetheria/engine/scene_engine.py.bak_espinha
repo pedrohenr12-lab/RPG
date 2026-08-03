@@ -1,0 +1,42 @@
+"""Motor de cena com condições, efeitos, tempo e testes d20."""
+from engine.condition_system import avaliar_condicao, encontrar_variacao_de_cena
+from engine.rpg_systems import rolar_teste, passar_tempo, mostrar_status
+
+def aplicar_efeitos(efeitos, estado):
+    for efeito in efeitos or []:
+        tipo, valor = efeito.get("tipo"), efeito.get("valor")
+        if tipo == "flag": estado.adicionar_flag(valor)
+        elif tipo == "remover_flag": estado.remover_flag(valor)
+        elif tipo == "item": estado.adicionar_item(valor)
+        elif tipo == "dano": estado.vida = max(0, estado.vida - valor)
+        elif tipo == "cura": estado.vida = min(estado.vida_max, estado.vida + valor)
+        elif tipo == "reputacao": estado.alterar_reputacao(efeito["faccao"], valor)
+        elif tipo in {"energia", "fome", "sede", "temperatura", "xp"}:
+            limite = 100 if tipo in {"energia", "fome", "sede"} else None
+            novo = getattr(estado, tipo) + valor
+            setattr(estado, tipo, max(0, min(limite, novo)) if limite else novo)
+        elif tipo == "tempo": passar_tempo(estado, valor)
+
+def opcoes_disponiveis(cena, estado):
+    return [opcao for opcao in cena.get("opcoes", []) if avaliar_condicao(opcao.get("condicao"), estado)]
+
+def executar_cena(cena, estado):
+    cena = encontrar_variacao_de_cena(cena, estado)
+    mostrar_status(estado)
+    print("\n" + "=" * 60 + "\n" + cena["texto"] + "\n" + "=" * 60)
+    opcoes = opcoes_disponiveis(cena, estado)
+    if not opcoes: return None
+    for i, opcao in enumerate(opcoes, 1): print(f"{i}. {opcao['texto']}")
+    while True:
+        escolha = input("\n> Escolha: ").strip()
+        if escolha.isdigit() and 1 <= int(escolha) <= len(opcoes): break
+        print("Opção inválida.")
+    opcao = opcoes[int(escolha) - 1]
+    sucesso = True
+    if opcao.get("teste"):
+        sucesso = rolar_teste(estado, opcao["teste"])
+    aplicar_efeitos(opcao.get("efeitos"), estado)
+    if opcao.get("teste"):
+        aplicar_efeitos(opcao["teste"].get("efeitos_sucesso" if sucesso else "efeitos_falha"), estado)
+        return opcao["teste"].get("destino_sucesso" if sucesso else "destino_falha", opcao.get("destino"))
+    return opcao.get("destino")

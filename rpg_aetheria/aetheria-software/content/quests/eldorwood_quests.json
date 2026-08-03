@@ -1,0 +1,217 @@
+[
+  {
+    "id": "eldorwood_as_folhas_pronunciam_nomes",
+    "title": "As folhas pronunciam nomes",
+    "category": "primary_optional",
+    "region": "eldorwood",
+    "summary": "Investigar a Raiz-Âncora e decidir quem pode controlar uma rede viva de memórias, sem transformar a trama principal em obrigação.",
+    "stages": [
+      {
+        "id": "q01",
+        "title": "Folhas que pronunciam nomes"
+      },
+      {
+        "id": "q02",
+        "title": "O dossel dos ausentes"
+      },
+      {
+        "id": "q03",
+        "title": "Três explicações para uma raiz"
+      },
+      {
+        "id": "q04",
+        "title": "Água que carrega lembranças"
+      },
+      {
+        "id": "q05",
+        "title": "Sael fala com vozes demais"
+      },
+      {
+        "id": "q06",
+        "title": "A trilha que continua sob o rio"
+      },
+      {
+        "id": "q07",
+        "title": "A pessoa que não quer voltar"
+      },
+      {
+        "id": "q08",
+        "title": "Quem não pôde consentir"
+      },
+      {
+        "id": "q09",
+        "title": "O último pensamento de Elandor"
+      },
+      {
+        "id": "q10",
+        "title": "Nomes do lado apagado"
+      },
+      {
+        "id": "q11",
+        "title": "A floresta formula uma resposta"
+      },
+      {
+        "id": "q12",
+        "title": "Conselho de muitas vidas"
+      },
+      {
+        "id": "q13",
+        "title": "Machados na noite"
+      },
+      {
+        "id": "q14",
+        "title": "Onde uma mente termina"
+      },
+      {
+        "id": "q15",
+        "title": "Uma floresta no singular"
+      },
+      {
+        "id": "q16",
+        "title": "Memória sem propriedade"
+      },
+      {
+        "id": "q17",
+        "title": "O silêncio sob a casca"
+      },
+      {
+        "id": "q18",
+        "title": "Muitas vozes no mesmo vento"
+      }
+    ],
+    "outcomes": {
+      "harmonizada": "A rede recebe consentimento, limites e rotas de saída.",
+      "selada": "A conexão é contida para impedir novas incorporações.",
+      "aberta": "A rede permanece acessível e Eldorwood assume o risco de governá-la."
+    }
+  },
+  {
+    "id": "eldorwood_sael_uma_vida_no_singular",
+    "title": "Uma vida no singular",
+    "category": "companion",
+    "region": "eldorwood",
+    "summary": "Acompanhar Sael sem decidir por ele se continuará ligado às memórias da Raiz-Mãe.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "O silêncio de Sael"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "Uma lembrança emprestada"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "A canção que precisa de duas pessoas"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "O limite que ele escolhe"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Uma vida no singular"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "A escolha de Sael"
+      }
+    ]
+  },
+  {
+    "id": "eldorwood_maelis_duas_sombras",
+    "title": "Duas sombras",
+    "category": "companion",
+    "region": "eldorwood",
+    "summary": "Descobrir se Maelis ainda controla sua vida dupla e que tipo de rede de informação pode existir sem consumir suas fontes.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "Duas caixas iguais"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "O preço de uma fonte"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "Duas sombras"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Uma dose, duas pessoas"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Confessar não apaga"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Uma rede que pode ser vista"
+      }
+    ]
+  },
+  {
+    "id": "eldorwood_caravanas_sem_sinos",
+    "title": "Caravanas sem sinos",
+    "category": "side",
+    "region": "eldorwood",
+    "summary": "Mercadores retiraram os sinos das carroças para evitar algo que caça pelo som nas colinas.",
+    "stages": [
+      {
+        "id": "rumor"
+      },
+      {
+        "id": "rota"
+      },
+      {
+        "id": "escolta"
+      },
+      {
+        "id": "consequencia"
+      }
+    ]
+  },
+  {
+    "id": "eldorwood_filhos_da_agua_baixa",
+    "title": "Filhos da água baixa",
+    "category": "community",
+    "region": "eldorwood",
+    "summary": "Uma comunidade Ninfari precisa decidir entre abandonar berçários naturais ou alterar o curso de um rio usado por vilas humanas.",
+    "stages": [
+      {
+        "id": "seca"
+      },
+      {
+        "id": "testemunhos"
+      },
+      {
+        "id": "obra"
+      },
+      {
+        "id": "acordo"
+      }
+    ]
+  },
+  {
+    "id": "eldorwood_cortadores_de_raiz",
+    "title": "Os cortadores de raiz",
+    "category": "faction",
+    "region": "eldorwood",
+    "summary": "Descobrir quem corta raízes antigas e se o motivo é lucro, sobrevivência, sabotagem ou uma mistura dos três.",
+    "stages": [
+      {
+        "id": "vestigios"
+      },
+      {
+        "id": "compradores"
+      },
+      {
+        "id": "oficina"
+      },
+      {
+        "id": "julgamento"
+      }
+    ]
+  }
+]

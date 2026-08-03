@@ -1,0 +1,36 @@
+[
+  {
+    "id": "espinha_escutar_antes_de_andar",
+    "texto": "Você não se levanta. Primeiro, conta três respirações. Depois mais três. O mundo responde em camadas: água pingando ou neve derretendo; vento passando por uma garganta estreita; um ruído seco que pode ser pedra cedendo, ou algo com patas se afastando. Sua mente procura referências do mundo de onde veio, mas não encontra nenhuma. A ausência de familiaridade é quase tão perigosa quanto o frio.",
+    "opcoes": [
+      {
+        "texto": "Tentar identificar a origem dos sons antes de andar",
+        "teste": {
+          "nome": "Ler os sons da Espinha",
+          "atributo": "percepcao",
+          "dificuldade": 12,
+          "destino_sucesso": "espinha_preparado",
+          "destino_falha": "espinha_preparado",
+          "efeitos_sucesso": [{"tipo": "flag", "valor": "primeiro_alerta_da_espinha"}, {"tipo": "xp", "valor": 4}],
+          "efeitos_falha": [{"tipo": "energia", "valor": -3}]
+        }
+      },
+      {
+        "texto": "Levantar antes que o frio torne a decisão por você",
+        "destino": "espinha_preparado",
+        "efeitos": [{"tipo": "temperatura", "valor": -2}]
+      }
+    ]
+  },
+  {
+    "id": "espinha_preparado",
+    "texto": "Você escolhe um ritmo lento. Não há mapa, trilha confiável nem promessa de socorro. Pode haver uma fortaleza anã atrás de uma encosta, uma fonte escondida no vale ou algo que caça pelo som nas cavernas. O que você faz nas primeiras horas — observar, conservar energia, deixar rastros ou seguir um brilho — vai mudar o que este lugar aprenderá sobre você.",
+    "opcoes": [
+      {
+        "texto": "Entrar na exploração livre da Espinha do Mundo",
+        "modo": "exploracao_espinha",
+        "bioma_inicial": "aleatorio"
+      }
+    ]
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "espinha_ancora_profundidade",
+    "title": "A Âncora da Profundidade",
+    "category": "primary_optional",
+    "region": "espinha_do_mundo",
+    "summary": "Investigar tremores, a forja, o dragão, o refúgio Vorath e o Berço do Meridiano sem tornar a trama obrigatória.",
+    "stages": [
+      {
+        "id": "q01",
+        "title": "O pulso sob as minas"
+      },
+      {
+        "id": "q02",
+        "title": "Sete tremores medidos"
+      },
+      {
+        "id": "q03",
+        "title": "Amortecedores rompidos"
+      },
+      {
+        "id": "q04",
+        "title": "A forja que não deveria existir"
+      },
+      {
+        "id": "q05",
+        "title": "O ar que depende do fogo"
+      },
+      {
+        "id": "q06",
+        "title": "Greve sob o teto"
+      },
+      {
+        "id": "q07",
+        "title": "O dragão que sustenta o teto"
+      },
+      {
+        "id": "q08",
+        "title": "Correntes de Pressium"
+      },
+      {
+        "id": "q09",
+        "title": "A escolha do dragão"
+      },
+      {
+        "id": "q10",
+        "title": "A cidade dos inimigos"
+      },
+      {
+        "id": "q11",
+        "title": "Séculos de colaboração"
+      },
+      {
+        "id": "q12",
+        "title": "O nome público do refúgio"
+      },
+      {
+        "id": "q13",
+        "title": "O berço do Meridiano"
+      },
+      {
+        "id": "q14",
+        "title": "Ilyon na pedra"
+      },
+      {
+        "id": "q15",
+        "title": "Seis soluções incompatíveis"
+      },
+      {
+        "id": "q16",
+        "title": "Redistribuir a carga"
+      },
+      {
+        "id": "q17",
+        "title": "Infraestrutura sem escravidão"
+      },
+      {
+        "id": "q18",
+        "title": "Dividir a chave"
+      }
+    ],
+    "outcomes": {
+      "carga_redistribuida_entre_regioes": "A carga deixa de pertencer a uma cidade e exige manutenção pública nas seis regiões.",
+      "dragao_liberto_infraestrutura_substituta": "O dragão é libertado e uma infraestrutura trabalhosa substitui sua servidão.",
+      "chave_dividida_entre_comunidades": "A chave dividida impede controle exclusivo e obriga cooperação entre comunidades."
+    }
+  },
+  {
+    "id": "espinha_mara_carga_viva",
+    "title": "Carga viva",
+    "category": "companion",
+    "region": "espinha_do_mundo",
+    "summary": "Construir amizade, romance possível, aliança ou ruptura com Mara sem transformar trabalho e afeto em posse.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "A viga que canta"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "O nome no acidente"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "Trabalho sem heroísmo"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Liberdade com teto"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Uma noite na oficina"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Duas vidas possíveis"
+      }
+    ]
+  },
+  {
+    "id": "espinha_tarek_sem_ceu",
+    "title": "Sem céu",
+    "category": "companion",
+    "region": "espinha_do_mundo",
+    "summary": "Conhecer Tarek e o Refúgio Velado respeitando segurança, povo, desejo de reconhecimento e autonomia.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "A porta sem brasão"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "O mapa de quem foge"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "O avô Aureli"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Nome ou segurança"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Céu pela primeira vez"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Companheiro sem destino"
+      }
+    ]
+  },
+  {
+    "id": "espinha_turnos_sem_ar",
+    "title": "Turnos sem ar",
+    "category": "side",
+    "region": "espinha_do_mundo",
+    "summary": "Manter ventilação e segurança durante a greve sem criminalizar trabalhadores.",
+    "stages": [
+      {
+        "id": "medir"
+      },
+      {
+        "id": "negociar"
+      },
+      {
+        "id": "substituir"
+      },
+      {
+        "id": "fiscalizar"
+      }
+    ]
+  },
+  {
+    "id": "espinha_nome_do_refugio",
+    "title": "O nome do refúgio",
+    "category": "community",
+    "region": "espinha_do_mundo",
+    "summary": "Negociar reconhecimento Vorath sem expor moradores à vingança.",
+    "stages": [
+      {
+        "id": "ouvir"
+      },
+      {
+        "id": "proteger"
+      },
+      {
+        "id": "representar"
+      },
+      {
+        "id": "decidir"
+      }
+    ]
+  },
+  {
+    "id": "espinha_preco_do_pressium",
+    "title": "O preço do Pressium",
+    "category": "faction",
+    "region": "espinha_do_mundo",
+    "summary": "Confrontar monopólios e dependência econômica sem desligar aquecimento e ventilação.",
+    "stages": [
+      {
+        "id": "estoque"
+      },
+      {
+        "id": "turnos"
+      },
+      {
+        "id": "provas"
+      },
+      {
+        "id": "reforma"
+      }
+    ]
+  }
+]

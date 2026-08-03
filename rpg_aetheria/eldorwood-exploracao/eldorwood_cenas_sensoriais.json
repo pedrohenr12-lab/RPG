@@ -1,0 +1,15 @@
+[
+  {
+    "id": "eldorwood_escutar_antes",
+    "texto": "Você fecha os olhos por alguns instantes. Gotas escorrem de folhas altas; algo pequeno arranha uma casca; mais longe, um som pesado afunda no chão molhado e para. Há também um ritmo que parece quase uma canção no movimento das árvores, mas talvez seja apenas vento. Você não tem certeza de nada ainda — e isso é a primeira verdade útil que aprende em Eldorwood.",
+    "opcoes": [
+      {"texto": "Tentar separar o som de um animal do som da floresta", "teste": {"nome": "Ler os sons de Eldorwood", "atributo": "percepcao", "dificuldade": 12, "destino_sucesso": "eldorwood_preparado", "destino_falha": "eldorwood_preparado", "efeitos_sucesso": [{"tipo": "flag", "valor": "primeiro_alerta_eldorwood"}, {"tipo": "xp", "valor": 4}], "efeitos_falha": [{"tipo": "energia", "valor": -2}]}},
+      {"texto": "Levantar antes que o frio e a umidade avancem", "destino": "eldorwood_preparado", "efeitos": [{"tipo": "temperatura", "valor": -2}]}
+    ]
+  },
+  {
+    "id": "eldorwood_preparado",
+    "texto": "Você escolhe não tratar a mata como cenário. Cada passo pode deixar um rastro; cada coleta pode ajudar ou ferir um ecossistema que não conhece; cada pessoa encontrada poderá interpretar sua aparência e suas escolhas antes de ouvir sua história. O caminho é livre, mas não é vazio.",
+    "opcoes": [{"texto": "Entrar na exploração livre de Eldorwood", "modo": "exploracao_eldorwood", "bioma_inicial": "aleatorio"}]
+  }
+]

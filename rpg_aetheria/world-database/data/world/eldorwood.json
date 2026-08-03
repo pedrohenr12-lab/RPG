@@ -1,0 +1,28 @@
+{
+  "id": "eldorwood", "nome": "Eldorwood", "descricao_descoberta": "Uma região úmida de florestas, rios e colinas sob névoa constante.",
+  "biomas": {
+    "floresta_densa_antiga": {"nome": "Floresta Densa Antiga", "clima": "frio, úmido e escuro sob o dossel", "recursos": ["erva_da_neblina", "cogumelo_sombra", "raiz_de_vida"], "encontros": {"comum": ["cervideo_eldor", "raposa_musgo", "coruja_brumas"], "perigoso": ["lobo_sombrio", "aranha_teia_verde"], "mistico": ["espirito_das_arvores"]}},
+    "pantanos_e_rios": {"nome": "Pântanos e Rios", "clima": "neblina baixa, chuva e água lodosa", "recursos": ["alga_pura", "flor_fogo_fatuo"], "encontros": {"comum": ["garca_brumas", "lontra_neblina", "peixe_luminoso"], "perigoso": ["serpente_agua", "crocodilo_pantano"], "mistico": ["insetos_fogo_fatuo"]}},
+    "colinas_arborizadas": {"nome": "Colinas Arborizadas", "clima": "frio moderado, vento e clareiras", "recursos": ["erva_de_vento", "bagas_vermelhas", "flor_de_pedra"], "encontros": {"comum": ["lebre_clareira", "raposa_vermelha", "falcao_patterium"], "perigoso": ["javali_eldor", "texugo_colinas"], "mistico": ["pedras_patterium"]}}
+  },
+  "criaturas": {
+    "cervideo_eldor": {"nome": "Cervídeo de Eldor", "categoria": "animal", "ameaca": 1, "descricao": "Herbívoro silencioso, de chifres semelhantes a galhos."},
+    "raposa_musgo": {"nome": "Raposa de Musgo", "categoria": "animal", "ameaca": 1, "descricao": "Caçadora pequena, camuflada no musgo."},
+    "coruja_brumas": {"nome": "Coruja das Brumas", "categoria": "animal", "ameaca": 1, "descricao": "Ave de olhos amarelos associada a presságios."},
+    "lobo_sombrio": {"nome": "Lobo-Sombrio", "categoria": "animal", "ameaca": 3, "descricao": "Predador inteligente que caça em pares."},
+    "aranha_teia_verde": {"nome": "Aranha-Teia-Verde", "categoria": "animal", "ameaca": 2, "descricao": "Aranha de veneno paralisante leve."},
+    "espirito_das_arvores": {"nome": "Espírito das Árvores", "categoria": "mistico", "ameaca": 4, "descricao": "Guardião semi-etéreo das Árvores-Anciãs."},
+    "garca_brumas": {"nome": "Garça das Brumas", "categoria": "animal", "ameaca": 1, "descricao": "Ave alta que caça na água rasa."},
+    "lontra_neblina": {"nome": "Lontra de Neblina", "categoria": "animal", "ameaca": 1, "descricao": "Animal inteligente que vive em famílias."},
+    "peixe_luminoso": {"nome": "Peixe-Luminoso", "categoria": "animal", "ameaca": 1, "descricao": "Peixe azul-esverdeado de águas com Aquanium."},
+    "serpente_agua": {"nome": "Serpente d'Água", "categoria": "animal", "ameaca": 3, "descricao": "Predador rápido e venenoso."},
+    "crocodilo_pantano": {"nome": "Crocodilo de Pântano", "categoria": "animal", "ameaca": 5, "descricao": "Predador territorial, paciente e camuflado."},
+    "insetos_fogo_fatuo": {"nome": "Insetos-Fogo-Fátuo", "categoria": "mistico", "ameaca": 3, "descricao": "Enxames luminosos que guiam ou desorientam."},
+    "lebre_clareira": {"nome": "Lebre de Clareira", "categoria": "animal", "ameaca": 1, "descricao": "Presa comum das colinas."},
+    "raposa_vermelha": {"nome": "Raposa-Vermelha", "categoria": "animal", "ameaca": 1, "descricao": "Caçadora oportunista."},
+    "falcao_patterium": {"nome": "Falcão de Patterium", "categoria": "animal", "ameaca": 2, "descricao": "Ave de voo extremamente estável."},
+    "javali_eldor": {"nome": "Javali de Eldor", "categoria": "animal", "ameaca": 4, "descricao": "Animal robusto e agressivo se acuado."},
+    "texugo_colinas": {"nome": "Texugo das Colinas", "categoria": "animal", "ameaca": 2, "descricao": "Animal territorial de tocas complexas."},
+    "pedras_patterium": {"nome": "Formações de Patterium", "categoria": "lendario", "ameaca": 0, "descricao": "Pedras simétricas ligadas a mistérios antigos."}
+  }
+}

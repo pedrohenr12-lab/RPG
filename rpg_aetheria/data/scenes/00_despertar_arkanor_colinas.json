@@ -1,0 +1,69 @@
+{
+  "id": "00_despertar_arkanor_colinas",
+  "titulo": "Entre morros sem nome",
+  "texto": "O vento o acorda numa encosta coberta de grama curta. Muros baixos desaparecem atrás de colinas sucessivas; vinhas seguem curvas perfeitas e sinos chegam de direções diferentes. Nenhum nome acompanha a paisagem. Uma fonte corre sob carvalhos, pegadas de javali cruzam a trilha e fumaça rural surge somente quando a névoa se abre.",
+  "meta": {
+    "regiao": "arkanor",
+    "bioma": "colinas_suaves",
+    "fase": "nascimento",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Observar o lugar antes de abandonar o ponto de despertar",
+      "destino": "r3_c01_primeira_crista",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "arkanor.nascimento.c.observou",
+          "valor": true,
+          "categoria": "arkanor",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você não escolhe um destino ainda. Primeiro mede o vento, a umidade, os sons e as saídas; só então deixa o ponto onde acordou, capaz de reconhecê-lo se precisar voltar.",
+      "jornada": {
+        "distancia_km": 1.2,
+        "minutos_minimos": 45,
+        "terreno": "colinas_suaves",
+        "direcao": "oeste",
+        "perto_civilizacao": false
+      }
+    },
+    {
+      "texto": "Seguir o sinal de passagem mais recente",
+      "destino": "r3_c02_vinhas_em_curvas",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "arkanor.nascimento.c.seguiu_rastro",
+          "valor": true,
+          "categoria": "arkanor",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você escolhe o sinal mais recente, mas não o confunde com segurança. Mantém distância suficiente para parar se o autor das marcas retornar pelo mesmo caminho.",
+      "jornada": {
+        "distancia_km": 2.1,
+        "minutos_minimos": 50,
+        "terreno": "colinas_suaves",
+        "direcao": "norte",
+        "perto_civilizacao": false
+      }
+    },
+    {
+      "texto": "Deixar a rota surgir da exploração livre, passo a passo",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "arkanor.nascimento.c.livre",
+          "valor": true,
+          "categoria": "arkanor",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você recusa transformar os primeiros sinais em destino. O mapa permanecerá aberto: direção, ritmo, descanso e desvios serão escolhidos durante a marcha."
+    }
+  ]
+}

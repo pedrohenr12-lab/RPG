@@ -1,0 +1,69 @@
+{
+  "id": "00_despertar_eldorwood_pantano",
+  "titulo": "A margem que respira",
+  "texto": "Você desperta com uma das mãos dentro de água morna e escura. A margem cede alguns centímetros a cada respiração; não é terra firme, mas uma ilha de raízes e turfa. Insetos luminosos marcam canais diferentes, uma ave de pernas altas observa sem fugir e algo grande expira além da cortina de juncos. Não há estrada à vista. Um remo quebrado, pegadas descalças e água correndo para o norte são as únicas referências.",
+  "meta": {
+    "regiao": "eldorwood",
+    "bioma": "pantanos_rios",
+    "fase": "nascimento",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Observar o lugar antes de abandonar o ponto de despertar",
+      "destino": "r2_r01_turfa_que_respira",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "eldorwood.nascimento.r.observou",
+          "valor": true,
+          "categoria": "eldorwood",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você não escolhe um destino ainda. Primeiro mede o vento, a umidade, os sons e as saídas; só então deixa o ponto onde acordou, capaz de reconhecê-lo se precisar voltar.",
+      "jornada": {
+        "distancia_km": 1.2,
+        "minutos_minimos": 65,
+        "terreno": "pantanos_rios",
+        "direcao": "oeste",
+        "perto_civilizacao": false
+      }
+    },
+    {
+      "texto": "Seguir o sinal de passagem mais recente",
+      "destino": "r2_r02_garcas_imoveis",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "eldorwood.nascimento.r.seguiu_rastro",
+          "valor": true,
+          "categoria": "eldorwood",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você escolhe o sinal mais recente, mas não o confunde com segurança. Mantém distância suficiente para parar se o autor das marcas retornar pelo mesmo caminho.",
+      "jornada": {
+        "distancia_km": 2.1,
+        "minutos_minimos": 115,
+        "terreno": "pantanos_rios",
+        "direcao": "norte",
+        "perto_civilizacao": false
+      }
+    },
+    {
+      "texto": "Deixar a rota surgir da exploração livre, passo a passo",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "eldorwood.nascimento.r.livre",
+          "valor": true,
+          "categoria": "eldorwood",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você recusa transformar os primeiros sinais em destino. O mapa permanecerá aberto: direção, ritmo, descanso e desvios serão escolhidos durante a marcha."
+    }
+  ]
+}

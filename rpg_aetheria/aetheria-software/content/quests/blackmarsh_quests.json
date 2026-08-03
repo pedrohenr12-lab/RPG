@@ -1,0 +1,217 @@
+[
+  {
+    "id": "blackmarsh_limiar",
+    "title": "O Limiar",
+    "category": "primary_optional",
+    "region": "blackmarsh",
+    "summary": "Investigar a Fenda Selada, a febre compartilhada, os sacrifícios e as cidades Vorath sem tornar a trama obrigatória.",
+    "stages": [
+      {
+        "id": "q01",
+        "title": "As ilhas formam uma porta"
+      },
+      {
+        "id": "q02",
+        "title": "A terceira noite"
+      },
+      {
+        "id": "q03",
+        "title": "Duas margens no mesmo lugar"
+      },
+      {
+        "id": "q04",
+        "title": "A febre de duas margens"
+      },
+      {
+        "id": "q05",
+        "title": "Amostras que precisam viver"
+      },
+      {
+        "id": "q06",
+        "title": "Quarentena não é sentença"
+      },
+      {
+        "id": "q07",
+        "title": "O alimento do selo"
+      },
+      {
+        "id": "q08",
+        "title": "Os barcos de Neris"
+      },
+      {
+        "id": "q09",
+        "title": "A primeira guardiã"
+      },
+      {
+        "id": "q10",
+        "title": "Guardiões do sacrifício"
+      },
+      {
+        "id": "q11",
+        "title": "O campo da Batalha das Fendas"
+      },
+      {
+        "id": "q12",
+        "title": "Seris Vael"
+      },
+      {
+        "id": "q13",
+        "title": "O deformado que ainda obedece"
+      },
+      {
+        "id": "q14",
+        "title": "A vila entre respirações"
+      },
+      {
+        "id": "q15",
+        "title": "Quem deve evacuar"
+      },
+      {
+        "id": "q16",
+        "title": "Duas margens, um rio"
+      },
+      {
+        "id": "q17",
+        "title": "O fechamento e a memória"
+      },
+      {
+        "id": "q18",
+        "title": "Passagem limitada"
+      }
+    ],
+    "outcomes": {
+      "fechamento_com_fonte_nao_biologica": "O selo deixa de consumir vidas e mantém o contato fechado sob memória pública.",
+      "passagem_gradual_monitorada": "Uma abertura limitada permite quarentena, resgate e diplomacia em etapas.",
+      "coro_de_guardioes_independentes": "Povos das duas margens fiscalizam uma passagem limitada sem controle exclusivo de Maeva ou Seris."
+    }
+  },
+  {
+    "id": "blackmarsh_neris_rotas_sem_posse",
+    "title": "Rotas sem posse",
+    "category": "companion",
+    "region": "blackmarsh",
+    "summary": "Construir amizade, romance possível, aliança ou ruptura com Neris enquanto sua rede clandestina salva pessoas e cria dívidas.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "O mapa que se desfaz"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "Passageiros sem nome"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "O preço da rota clandestina"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "A irmã na lista"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Uma noite ancorada"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Duas rotas possíveis"
+      }
+    ]
+  },
+  {
+    "id": "blackmarsh_seris_entre_margens",
+    "title": "Entre margens",
+    "category": "companion",
+    "region": "blackmarsh",
+    "summary": "Conhecer Seris como pessoa e emissário Vorath, sem ignorar risco, autonomia ou seu povo.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "A voz do outro lado"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "Liberdade com risco"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "O nome de um inimigo"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Corpo emprestado"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "O mundo que continuou"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Companheiro entre margens"
+      }
+    ]
+  },
+  {
+    "id": "blackmarsh_febre_duas_margens",
+    "title": "A febre de duas margens",
+    "category": "side",
+    "region": "blackmarsh",
+    "summary": "Produzir e distribuir um antídoto que exige organismos locais e Vorath vivos.",
+    "stages": [
+      {
+        "id": "amostras"
+      },
+      {
+        "id": "comparar"
+      },
+      {
+        "id": "antidoto"
+      },
+      {
+        "id": "distribuir"
+      }
+    ]
+  },
+  {
+    "id": "blackmarsh_arquivo_ausentes",
+    "title": "O arquivo dos ausentes",
+    "category": "community",
+    "region": "blackmarsh",
+    "summary": "Identificar condenados, dissidentes e pessoas sem registro usados para alimentar o selo.",
+    "stages": [
+      {
+        "id": "listas"
+      },
+      {
+        "id": "familias"
+      },
+      {
+        "id": "guardioes"
+      },
+      {
+        "id": "publicar"
+      }
+    ]
+  },
+  {
+    "id": "blackmarsh_preco_do_antidoto",
+    "title": "O preço do antídoto",
+    "category": "faction",
+    "region": "blackmarsh",
+    "summary": "Impedir monopólio e falsificação durante a febre sem destruir produção e transporte reais.",
+    "stages": [
+      {
+        "id": "estoque"
+      },
+      {
+        "id": "rotas"
+      },
+      {
+        "id": "provas"
+      },
+      {
+        "id": "confluencia"
+      }
+    ]
+  }
+]

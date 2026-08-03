@@ -1,0 +1,8 @@
+{
+  "id": "00_despertar_eldorwood",
+  "texto": "Você acorda sobre musgo úmido, com folhas altas demais cobrindo o céu. A luz é verde-azulada e chega em fragmentos, como se a manhã precisasse pedir licença para entrar na floresta. Há cheiro de terra fértil, chuva antiga e algo floral que você não sabe se é seguro respirar. Uma coruja grita ao longe; então o silêncio volta, grosso e atento. Você não reconhece este mundo, estas árvores ou os símbolos marcados em uma raiz. Em algum lugar de Eldorwood, longe de uma estrada confiável, sua história começa.",
+  "opcoes": [
+    {"texto": "Permanecer quieto, ouvir a floresta e procurar sinais de perigo", "destino": "eldorwood_escutar_antes"},
+    {"texto": "Começar a exploração livre de Eldorwood", "modo": "exploracao_eldorwood", "bioma_inicial": "aleatorio"}
+  ]
+}

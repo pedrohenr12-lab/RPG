@@ -1,0 +1,93 @@
+{
+  "id": "00_despertar_blackmarsh_mangues",
+  "titulo": "Entre raízes e maré",
+  "texto": "Raízes aéreas do tamanho de torres dividem a maré em corredores. O caminho de agora estará submerso em poucas horas.\n\nVocê desperta sem reconhecer o continente, o idioma das marcas nem a direção de uma cidade. O corpo, porém, reconhece calor, sede, pele encharcada e a necessidade de testar o chão antes de entregar o peso. Nada próximo garante água potável ou abrigo seco; escolher poucos metros já define exposição, toxinas e o primeiro rastro deixado neste mundo.",
+  "meta": {
+    "regiao": "blackmarsh",
+    "bioma": "mangues_gigantes",
+    "fase": "nascimento",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Permanecer alguns minutos imóvel e entender luz, vento e sons",
+      "destino": "r5_mg01_raizes_como_muralhas",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 15
+        },
+        {
+          "tipo": "xp",
+          "valor": 2
+        }
+      ],
+      "transicao": "Você controla a respiração e deixa o ambiente revelar o que o susto escondia. O próximo detalhe nasce dessa observação, não de um salto no tempo."
+    },
+    {
+      "texto": "Procurar água segura ou um ponto seco antes de caminhar",
+      "destino": "r5_mg01_raizes_como_muralhas",
+      "teste": {
+        "nome": "primeira leitura do terreno",
+        "atributo": "sobrevivencia",
+        "dificuldade": 12,
+        "destino_sucesso": "r5_mg01_raizes_como_muralhas",
+        "destino_falha": "r5_mg01_raizes_como_muralhas",
+        "efeitos_sucesso": [
+          {
+            "tipo": "umidade",
+            "valor": -5
+          },
+          {
+            "tipo": "energia",
+            "valor": 3
+          },
+          {
+            "tipo": "xp",
+            "valor": 3
+          }
+        ],
+        "efeitos_falha": [
+          {
+            "tipo": "sede",
+            "valor": 5
+          },
+          {
+            "tipo": "umidade",
+            "valor": 8
+          },
+          {
+            "tipo": "energia",
+            "valor": -3
+          }
+        ],
+        "transicao_sucesso": "Você encontra uma pequena vantagem seca e começa a jornada com alguma reserva.",
+        "transicao_falha": "A busca afunda roupa e equipamento, mas ensina como Blackmarsh esconde profundidade e água potável."
+      },
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 25
+        }
+      ],
+      "transicao": "A necessidade imediata conduz sua atenção ao primeiro trecho explorável."
+    },
+    {
+      "texto": "Escolher uma direção própria e iniciar exploração sem seguir qualquer história pronta",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 10
+        },
+        {
+          "tipo": "fato",
+          "chave": "blackmarsh.spawn.mangues_gigantes.livre",
+          "valor": true,
+          "categoria": "blackmarsh"
+        }
+      ],
+      "transicao": "Você não recebe missão, guia ou destino obrigatório. Blackmarsh continua ao redor e responderá à posição, ao tempo e às suas escolhas."
+    }
+  ]
+}

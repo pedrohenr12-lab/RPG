@@ -7,6 +7,10 @@ class GameState:
     raca: str = "humano"
     vida_max: int = 20
     vida: int = 20
+    mana_max: int = 10
+    mana: int = 10
+    velocidade: int = 5
+    chance_critico: float = 0.10
     ataque: int = 4
     defesa: int = 2
     cena_atual: str = "00_despertar"

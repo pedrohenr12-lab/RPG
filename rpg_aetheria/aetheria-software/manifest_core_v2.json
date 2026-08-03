@@ -1,0 +1,24 @@
+{
+  "name": "Aetheria Núcleo Persistente v2",
+  "app_version": "0.2.0",
+  "schema_version": 2,
+  "services": [
+    "WorldState",
+    "GameClock",
+    "ActionResolver",
+    "EventScheduler",
+    "QuestEngine"
+  ],
+  "pilot_quest": "frostreach_o_barco_que_voltou_sozinho",
+  "mysql_tables": [
+    "game_saves",
+    "game_event_log",
+    "quest_definitions_v2",
+    "character_world_facts",
+    "scheduled_world_events",
+    "character_quests_v2",
+    "quest_objectives_v2"
+  ],
+  "backward_compatible_saves": true,
+  "automated_tests": 31
+}

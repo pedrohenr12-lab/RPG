@@ -1,0 +1,15 @@
+[
+  {
+    "id": "stonevale_observar_antes",
+    "texto": "Você não corre. Primeiro olha para as sombras: curtas demais. Depois para a pedra: algumas faces são quentes, outras guardam umidade. Um risco na areia poderia ser de serpente, vento ou de algo que atravessou o local sem tocar o solo. Ao longe, uma linha verde impossível promete água; você já sabe, sem saber como, que promessas bonitas demais podem matar no deserto.",
+    "opcoes": [
+      {"texto": "Ler os sinais do terreno antes de gastar água e energia", "teste": {"nome": "Orientar-se em Stonevale", "atributo": "sobrevivencia", "dificuldade": 12, "destino_sucesso": "stonevale_preparado", "destino_falha": "stonevale_preparado", "efeitos_sucesso": [{"tipo": "flag", "valor": "primeiro_alerta_stonevale"}, {"tipo": "xp", "valor": 4}], "efeitos_falha": [{"tipo": "sede", "valor": 3}]}},
+      {"texto": "Levantar e procurar qualquer sinal de abrigo", "destino": "stonevale_preparado", "efeitos": [{"tipo": "energia", "valor": -2}]}
+    ]
+  },
+  {
+    "id": "stonevale_preparado",
+    "texto": "Você entende que Stonevale não é uma passagem rápida entre cidades. É um lugar que pede ritmo: caminhar pouco, observar muito, usar o calor a favor, procurar água antes do desespero e nunca supor que um eco é apenas um eco. Os próximos passos podem levá-lo a uma nascente, a uma comunidade distante, a uma ruína Vorath ou a um predador que conhece estas pedras melhor do que você.",
+    "opcoes": [{"texto": "Entrar na exploração livre de Stonevale", "modo": "exploracao_stonevale", "bioma_inicial": "aleatorio"}]
+  }
+]

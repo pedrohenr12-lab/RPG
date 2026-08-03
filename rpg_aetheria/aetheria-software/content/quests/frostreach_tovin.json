@@ -1,0 +1,36 @@
+{
+  "id": "frostreach_o_barco_que_voltou_sozinho",
+  "title": "O barco que voltou sozinho",
+  "category": "community_mystery",
+  "region": "frostreach",
+  "summary": "Tovin desapareceu no fiorde. O barco, o sangue, as escamas e a maré formam um acontecimento persistente que continuará sem o personagem.",
+  "stages": [
+    {
+      "id": "rumor",
+      "title": "Um pescador não voltou",
+      "objectives": ["learn_disappearance"]
+    },
+    {
+      "id": "boat",
+      "title": "O barco e as três marcas",
+      "objectives": ["inspect_boat", "choose_search_method"]
+    },
+    {
+      "id": "search",
+      "title": "A busca no fiorde",
+      "objectives": ["locate_tovin", "respond_to_serpent"]
+    },
+    {
+      "id": "aftermath",
+      "title": "O que voltou do gelo",
+      "objectives": ["determine_tovin_fate", "report_outcome"]
+    }
+  ],
+  "outcomes": {
+    "rescued": "Tovin e a pescadora foram retirados do fiorde com vida.",
+    "rescued_injured": "Tovin sobreviveu, mas o veneno de frio exige tratamento.",
+    "search_organized": "A vila assumiu a busca depois da organização do personagem.",
+    "resolved_without_player": "A situação continuou e foi resolvida sem a presença do personagem.",
+    "lost_to_tide": "A maré apagou as pistas e tornou a busca muito mais perigosa."
+  }
+}

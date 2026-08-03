@@ -1,0 +1,26 @@
+{
+  "id": "00_despertar_frostreach",
+  "texto": "O frio acorda você antes da dor. A neve compacta sob suas costas parece pedra, e cada respiração entra nos pulmões como uma lâmina fina. Acima, o céu de Frostreach é de um azul desbotado, quase branco; o sol existe, mas não aquece.\n\nÀ sua frente, a planície congelada se quebra em rochedos, fendas e pinheiros tortos. Luzes amareladas tremem muito longe, provavelmente Stonhelm. À esquerda, pegadas recentes cruzam a neve: botas pesadas, uma pessoa arrastando algo e, por cima delas, marcas de patas grandes. Ao norte, uma aurora pálida pulsa atrás de uma formação de gelo, como se o próprio céu estivesse tentando falar.\n\nVocê não sabe como chegou ali. Sabe apenas que, se ficar parado por tempo demais, Frostreach decidirá por você.",
+  "opcoes": [
+    {
+      "texto": "Procurar abrigo atrás das rochas antes de atravessar a planície",
+      "destino": "00b_frostreach_abrigo"
+    },
+    {
+      "texto": "Seguir as luzes de Stonhelm imediatamente, mesmo com a nevasca aumentando",
+      "efeitos": [
+        {"tipo": "dano", "valor": 2},
+        {"tipo": "flag", "valor": "atravessou_nevasca_sem_abrigo"}
+      ],
+      "destino": "00a_vento_branco"
+    },
+    {
+      "texto": "Examinar as pegadas de botas e de animais antes que a neve as cubra",
+      "destino": "00a_rastros_na_neve"
+    },
+    {
+      "texto": "Aproximar-se da aurora e da formação de gelo ao norte",
+      "destino": "00a_aurora_quebrada"
+    }
+  ]
+}

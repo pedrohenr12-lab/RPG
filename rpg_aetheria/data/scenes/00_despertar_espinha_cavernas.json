@@ -1,0 +1,68 @@
+{
+  "id": "00_despertar_espinha_cavernas",
+  "titulo": "O Pulso na Pedra — sem céu",
+  "texto": "Você desperta em escuridão total. Depois de minutos, fungos distantes revelam pilares maiores que cidades e um lago sem vento. O ar parado exige respirações lentas; uma vibração no chão acompanha seu coração antes de continuar sozinha.",
+  "meta": {
+    "regiao": "espinha_do_mundo",
+    "bioma": "cavernas_gigantes",
+    "fase": "despertar",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Permanecer imóvel, controlar a respiração e observar antes de gastar energia",
+      "destino": "r6_cavernas_gigantes_01_escuridao_entre_luzes",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 20
+        },
+        {
+          "tipo": "hipoxia",
+          "valor": -2
+        },
+        {
+          "tipo": "fato",
+          "valor": "cauteloso",
+          "chave": "espinha.spawn.cavernas_gigantes.ritmo"
+        }
+      ],
+      "transicao": "Você não recebe explicação imediata. O tempo passa enquanto frio, ar e escala deixam de ser uma única sensação de pânico."
+    },
+    {
+      "texto": "Procurar água, abrigo e um ponto com três apoios seguros",
+      "destino": "r6_cavernas_gigantes_02_salamandra_junto_a_agua",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 35
+        },
+        {
+          "tipo": "energia",
+          "valor": -2
+        },
+        {
+          "tipo": "risco_vertical",
+          "valor": -3
+        }
+      ],
+      "transicao": "A busca cobre apenas os arredores. Cada recurso precisa ser reconhecido antes de virar segurança."
+    },
+    {
+      "texto": "Escolher uma direção sem aceitar missão ou destino predefinido",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 10
+        },
+        {
+          "tipo": "fato",
+          "valor": true,
+          "chave": "espinha.spawn.cavernas_gigantes.livre"
+        }
+      ],
+      "transicao": "Você começa a caminhar por decisão própria. A Espinha não encurta para entregar cidade, inimigo ou história principal."
+    }
+  ]
+}

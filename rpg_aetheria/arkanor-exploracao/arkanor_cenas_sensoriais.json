@@ -1,0 +1,15 @@
+[
+  {
+    "id": "arkanor_observar_antes",
+    "texto": "Você não corre em direção às muralhas. Primeiro observa o ritmo do lugar: uma carroça para perto de uma ponte; trabalhadores se movem entre fileiras de trigo; dois pássaros de rapina giram acima de uma moita onde algo menor se esconde. Há vida humana por perto, e isso deveria acalmar você. Em vez disso, percebe que cada pessoa poderá fazer perguntas para as quais não possui respostas.",
+    "opcoes": [
+      {"texto": "Ler os sinais de uma estrada sem chamar atenção", "teste": {"nome": "Observar Arkanor", "atributo": "percepcao", "dificuldade": 11, "destino_sucesso": "arkanor_preparado", "destino_falha": "arkanor_preparado", "efeitos_sucesso": [{"tipo": "flag", "valor": "primeiro_alerta_arkanor"}, {"tipo": "xp", "valor": 4}], "efeitos_falha": [{"tipo": "energia", "valor": -2}]}},
+      {"texto": "Levantar e seguir a primeira trilha visível", "destino": "arkanor_preparado"}
+    ]
+  },
+  {
+    "id": "arkanor_preparado",
+    "texto": "Arkanor oferece mais caminhos que uma terra vazia: procurar trabalho, comida, uma ponte, um porto, uma vila, uma patrulha ou uma pessoa disposta a explicar o mundo. Mas lugares habitados também lembram quem ajudou, quem mentiu, quem roubou e quem apareceu do nada. Suas escolhas começam a construir uma reputação antes mesmo de você entender como esse reino funciona.",
+    "opcoes": [{"texto": "Entrar na exploração livre de Arkanor", "modo": "exploracao_arkanor", "bioma_inicial": "aleatorio"}]
+  }
+]

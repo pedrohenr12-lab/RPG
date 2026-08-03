@@ -1,0 +1,85 @@
+{
+  "id": "00_despertar_stonevale_vales",
+  "titulo": "Verde cercado por pedra",
+  "texto": "Depois de quilômetros de pedra, árvores e água parecem excessivamente verdes. Canais pequenos dividem o vale conforme acordos marcados em placas públicas.\n\nVocê desperta sem reconhecer o continente, o idioma das marcas nem a direção de uma cidade. O corpo, porém, reconhece calor, sede, altura e a necessidade de observar antes de gastar forças. Nada próximo garante abrigo; escolher poucos metros já define sombra, ruído e o primeiro rastro deixado neste mundo.",
+  "meta": {
+    "regiao": "stonevale",
+    "bioma": "vales_ferteis_isolados",
+    "fase": "nascimento",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Permanecer alguns minutos imóvel e entender luz, vento e sons",
+      "destino": "r4_va01_verde_depois_da_pedra",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 15
+        },
+        {
+          "tipo": "xp",
+          "valor": 2
+        }
+      ],
+      "transicao": "Você controla a respiração e deixa o ambiente revelar o que o susto escondia. O próximo detalhe nasce dessa observação, não de um salto no tempo."
+    },
+    {
+      "texto": "Procurar sombra, água ou um ponto de apoio antes de caminhar",
+      "destino": "r4_va01_verde_depois_da_pedra",
+      "teste": {
+        "nome": "primeira leitura do terreno",
+        "atributo": "sobrevivencia",
+        "dificuldade": 11,
+        "destino_sucesso": "r4_va01_verde_depois_da_pedra",
+        "destino_falha": "r4_va01_verde_depois_da_pedra",
+        "efeitos_sucesso": [
+          {
+            "tipo": "energia",
+            "valor": 3
+          },
+          {
+            "tipo": "xp",
+            "valor": 3
+          }
+        ],
+        "efeitos_falha": [
+          {
+            "tipo": "sede",
+            "valor": 5
+          },
+          {
+            "tipo": "energia",
+            "valor": -3
+          }
+        ],
+        "transicao_sucesso": "Você encontra uma pequena vantagem e começa a jornada com alguma reserva.",
+        "transicao_falha": "A busca custa mais do que entrega, mas ensina como Stonevale esconde seus recursos."
+      },
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 25
+        }
+      ],
+      "transicao": "A necessidade imediata conduz sua atenção ao primeiro trecho explorável."
+    },
+    {
+      "texto": "Escolher uma direção própria e iniciar exploração sem seguir qualquer história pronta",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 10
+        },
+        {
+          "tipo": "fato",
+          "chave": "stonevale.spawn.vales_ferteis_isolados.livre",
+          "valor": true,
+          "categoria": "stonevale"
+        }
+      ],
+      "transicao": "Você não recebe missão, guia ou destino obrigatório. Stonevale continua ao redor e responderá à posição, ao tempo e às suas escolhas."
+    }
+  ]
+}

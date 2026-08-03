@@ -1,0 +1,10 @@
+Copie as quatro linhas abaixo, cole no PowerShell e pressione Enter:
+
+$aetheriaPython = "C:\Users\Samsung\AppData\Local\Programs\Python\Python312\python.exe"
+$aetheriaUpdater = "C:\Users\Samsung\Documents\Codex\2026-08-01\github-app-connector-76869538009648d5b282a4bb21c3d157\outputs\aetheria-software\ATUALIZAR_AETHERIA.py"
+$aetheriaProject = "C:\Users\Samsung\OneDrive\Área de Trabalho\RPG\rpg_aetheria"
+& $aetheriaPython $aetheriaUpdater $aetheriaProject
+
+Depois de aparecer NÚCLEO PERSISTENTE V2 INSTALADO, execute:
+
+& "C:\Users\Samsung\OneDrive\Área de Trabalho\RPG\rpg_aetheria\aetheria-software\INICIAR_AETHERIA.bat"

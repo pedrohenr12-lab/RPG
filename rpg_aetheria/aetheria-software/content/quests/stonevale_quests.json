@@ -1,0 +1,217 @@
+[
+  {
+    "id": "stonevale_a_voz_antes_do_som",
+    "title": "A voz antes do som",
+    "category": "primary_optional",
+    "region": "stonevale",
+    "summary": "Investigar a Âncora do Eco, a pessoa possível em Kharos e a memória contraditória da Guerra dos Vorath sem tornar a trama obrigatória.",
+    "stages": [
+      {
+        "id": "q01",
+        "title": "A resposta antes da pergunta"
+      },
+      {
+        "id": "q02",
+        "title": "Três maneiras de repetir"
+      },
+      {
+        "id": "q03",
+        "title": "A voz que conhece sua ausência"
+      },
+      {
+        "id": "q04",
+        "title": "Água para os que não concordam"
+      },
+      {
+        "id": "q05",
+        "title": "A medida de uma sede"
+      },
+      {
+        "id": "q06",
+        "title": "O acordo que será lembrado"
+      },
+      {
+        "id": "q07",
+        "title": "Semanas antes do Cânion"
+      },
+      {
+        "id": "q08",
+        "title": "A caravana de preparação"
+      },
+      {
+        "id": "q09",
+        "title": "A última noite aberta"
+      },
+      {
+        "id": "q10",
+        "title": "O exército na parede"
+      },
+      {
+        "id": "q11",
+        "title": "Kharos ainda marcha"
+      },
+      {
+        "id": "q12",
+        "title": "Provar que o tempo passou"
+      },
+      {
+        "id": "q13",
+        "title": "Os corpos emprestados"
+      },
+      {
+        "id": "q14",
+        "title": "Os demônios que pediam água"
+      },
+      {
+        "id": "q15",
+        "title": "A guerra dos testemunhos"
+      },
+      {
+        "id": "q16",
+        "title": "Cidadania para uma cópia"
+      },
+      {
+        "id": "q17",
+        "title": "O arquivo que não comanda"
+      },
+      {
+        "id": "q18",
+        "title": "Direito ao silêncio"
+      }
+    ],
+    "outcomes": {
+      "cidadania": "Ecos recebem personalidade jurídica, corpos apenas voluntários e responsabilidade própria.",
+      "arquivo_limitado": "Ecos preservam testemunhos num arquivo incapaz de comandar, com revisão e direito de saída.",
+      "direito_ao_silencio": "Comunidades podem recusar ressonância; Ecos recebem rotas voluntárias de libertação ou encerramento."
+    }
+  },
+  {
+    "id": "stonevale_rakh_honra_sem_plateia",
+    "title": "Honra sem plateia",
+    "category": "companion",
+    "region": "stonevale",
+    "summary": "Construir amizade, romance possível, aliança ou ruptura com Rakh enquanto ele redefine força e honra.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "O duelo combinado"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "Água antes do orgulho"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "A força que carrega"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Notícia do adversário"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Uma noite sem armadura"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Companheiro por escolha"
+      }
+    ]
+  },
+  {
+    "id": "stonevale_samira_a_coragem_da_duvida",
+    "title": "A coragem da dúvida",
+    "category": "companion",
+    "region": "stonevale",
+    "summary": "Conhecer Samira por observação, trabalho e intimidade consentida sem reduzir sua vida à relação.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "Sete sombras"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "A família sem cota"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "O céu durante o dia"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "A assinatura do pai"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Quando a certeza descansa"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "Duas rotas inteiras"
+      }
+    ]
+  },
+  {
+    "id": "stonevale_agua_entre_clas",
+    "title": "Água entre clãs",
+    "category": "side",
+    "region": "stonevale",
+    "summary": "Negociar vazão, manutenção e passagem entre comunidades que possuem registros incompatíveis.",
+    "stages": [
+      {
+        "id": "medir"
+      },
+      {
+        "id": "ouvir"
+      },
+      {
+        "id": "reparar"
+      },
+      {
+        "id": "acordo"
+      }
+    ]
+  },
+  {
+    "id": "stonevale_ponte_sem_margem",
+    "title": "A ponte sem margem",
+    "category": "community",
+    "region": "stonevale",
+    "summary": "Salvar Ponte Alta sem transferir todo o custo e risco para trabalhadores Ferrari e Ziraki.",
+    "stages": [
+      {
+        "id": "fissura"
+      },
+      {
+        "id": "evacuacao"
+      },
+      {
+        "id": "reparo"
+      },
+      {
+        "id": "consequencia"
+      }
+    ]
+  },
+  {
+    "id": "stonevale_preco_da_sede",
+    "title": "O preço da sede",
+    "category": "faction",
+    "region": "stonevale",
+    "summary": "Investigar manipulação de estoques e preços durante o fechamento de poços.",
+    "stages": [
+      {
+        "id": "estoque"
+      },
+      {
+        "id": "rotas"
+      },
+      {
+        "id": "provas"
+      },
+      {
+        "id": "mesa"
+      }
+    ]
+  }
+]

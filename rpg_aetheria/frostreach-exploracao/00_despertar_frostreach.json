@@ -1,0 +1,8 @@
+{
+  "id": "00_despertar_frostreach",
+  "texto": "Você acorda porque o frio finalmente vence o sono. Ele não chega de uma vez: começa nos dedos, sobe pelos pulsos e transforma cada respiração em uma decisão. Quando abre os olhos, vê neve, rocha escura e um céu que parece perto demais. Talvez haja fiordes abaixo, uma tundra sem fim além da encosta ou picos que rasgam as nuvens. Você não reconhece a aurora, os cristais no gelo, os rastros ao redor nem as regras deste mundo. Em algum ponto de Frostreach, muito longe de uma fogueira ou de uma cidade, sua história começa.",
+  "opcoes": [
+    {"texto": "Ficar imóvel, controlar a respiração e escutar o vento antes de se expor", "destino": "frostreach_escutar_antes"},
+    {"texto": "Aceitar o risco e iniciar a exploração livre de Frostreach", "modo": "exploracao_frostreach", "bioma_inicial": "aleatorio"}
+  ]
+}

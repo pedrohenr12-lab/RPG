@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "region": "frostreach",
+  "phase": "inicio_da_jornada",
+  "scene_count": 100,
+  "choice_count": 300,
+  "choices_per_scene": 3,
+  "villages": [
+    {
+      "slug": "brumafiorde",
+      "name": "Brumafiorde",
+      "peoples": [
+        "Humanos Northarianos",
+        "Aquari",
+        "Glacari"
+      ],
+      "economy": "pesca, algas e navegação"
+    },
+    {
+      "slug": "renaquieta",
+      "name": "Renaquieta",
+      "peoples": [
+        "Humanos Northarianos",
+        "Glacari"
+      ],
+      "economy": "renas, caça e rotas sazonais"
+    },
+    {
+      "slug": "pedravela",
+      "name": "Pedravela",
+      "peoples": [
+        "Aureli",
+        "Ferrari",
+        "Voraki"
+      ],
+      "economy": "mineração, forja e cristais"
+    },
+    {
+      "slug": "stonhelm",
+      "name": "Stonhelm",
+      "peoples": [
+        "Humanos",
+        "Glacari",
+        "Aureli",
+        "Aquari",
+        "Luminari"
+      ],
+      "economy": "capital regional, guildas e comércio"
+    },
+    {
+      "slug": "lumen_ninho",
+      "name": "Lúmen-Ninho",
+      "peoples": [
+        "Luminari",
+        "Glacari"
+      ],
+      "economy": "cartografia celeste e Luminite"
+    }
+  ],
+  "companions": [
+    {
+      "slug": "sigrid",
+      "name": "Sigrid Vento-Curto",
+      "race": "Humana Northariana",
+      "role": "rastreadora",
+      "conflict": "não tolera crueldade ou desperdício"
+    },
+    {
+      "slug": "ilyra",
+      "name": "Ilyra da Neve Serena",
+      "race": "Glacari",
+      "role": "curandeira e herbalista",
+      "conflict": "protege Renaquieta antes de aventuras"
+    },
+    {
+      "slug": "brokk",
+      "name": "Brokk Ferrofrio",
+      "race": "Aureli",
+      "role": "mineiro, defensor e artífice",
+      "conflict": "lealdade à guilda contra a verdade"
+    },
+    {
+      "slug": "nym",
+      "name": "Nym Auralume",
+      "race": "Luminari",
+      "role": "cartógrafa e estudiosa do Aether",
+      "conflict": "registra inclusive segredos do grupo"
+    }
+  ],
+  "quests": {
+    "primary": [
+      "Sobreviver e alcançar civilização",
+      "Investigar a Aurora Quebrada",
+      "Descobrir o segredo de Aldric e dos Vorath",
+      "Decidir como Frostreach contará a verdade"
+    ],
+    "secondary": [
+      "Encontrar Tovin",
+      "Curar o rebanho de Renaquieta",
+      "Resgatar mineiros de Pedravela",
+      "Rastrear o contrabando de Luminite",
+      "Investigar a patrulha perdida de Sigrid",
+      "Estudar a Flor-de-Gelo Eterna",
+      "Resolver o conflito do Dragão Menor",
+      "Proteger Brumafiorde da Serpente-Marinha"
+    ],
+    "free": [
+      "Construir moradia",
+      "Escolher profissão",
+      "Treinar habilidades",
+      "Caçar e pescar",
+      "Catalogar fauna e flora",
+      "Negociar no mercado",
+      "Viajar sozinho",
+      "Formar companhia"
+    ]
+  },
+  "endings": [
+    "Começar história continental",
+    "Permanecer e morar em Frostreach",
+    "Continuar exploração livre"
+  ]
+}
+

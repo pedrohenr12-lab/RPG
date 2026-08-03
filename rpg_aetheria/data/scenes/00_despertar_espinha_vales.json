@@ -1,0 +1,68 @@
+{
+  "id": "00_despertar_espinha_vales",
+  "titulo": "O Pulso na Pedra — o vale sem manhã",
+  "texto": "Você acorda num terraço estreito enquanto paredes monumentais escondem o sol. Água corre sob gelo fino e uma ave repete um som de ferramenta. Não há memória de Eudora, da montanha ou da língua que talvez tenha ouvido durante o sono.",
+  "meta": {
+    "regiao": "espinha_do_mundo",
+    "bioma": "vales_profundos",
+    "fase": "despertar",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Permanecer imóvel, controlar a respiração e observar antes de gastar energia",
+      "destino": "r6_vales_profundos_01_sombra_antes_do_meio_dia",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 20
+        },
+        {
+          "tipo": "hipoxia",
+          "valor": -2
+        },
+        {
+          "tipo": "fato",
+          "valor": "cauteloso",
+          "chave": "espinha.spawn.vales_profundos.ritmo"
+        }
+      ],
+      "transicao": "Você não recebe explicação imediata. O tempo passa enquanto frio, ar e escala deixam de ser uma única sensação de pânico."
+    },
+    {
+      "texto": "Procurar água, abrigo e um ponto com três apoios seguros",
+      "destino": "r6_vales_profundos_02_cervo_nos_terracos",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 35
+        },
+        {
+          "tipo": "energia",
+          "valor": -2
+        },
+        {
+          "tipo": "risco_vertical",
+          "valor": -3
+        }
+      ],
+      "transicao": "A busca cobre apenas os arredores. Cada recurso precisa ser reconhecido antes de virar segurança."
+    },
+    {
+      "texto": "Escolher uma direção sem aceitar missão ou destino predefinido",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "tempo_minutos",
+          "valor": 10
+        },
+        {
+          "tipo": "fato",
+          "valor": true,
+          "chave": "espinha.spawn.vales_profundos.livre"
+        }
+      ],
+      "transicao": "Você começa a caminhar por decisão própria. A Espinha não encurta para entregar cidade, inimigo ou história principal."
+    }
+  ]
+}

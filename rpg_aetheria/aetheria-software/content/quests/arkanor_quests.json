@@ -1,0 +1,217 @@
+[
+  {
+    "id": "arkanor_o_manuscrito_le_voce",
+    "title": "O manuscrito lê você",
+    "category": "primary_optional",
+    "region": "arkanor",
+    "summary": "Investigar a Âncora da Medida e decidir se previsões podem ser públicas, seladas ou tecnicamente auditadas, sem tornar a trama obrigatória.",
+    "stages": [
+      {
+        "id": "q01",
+        "title": "O manuscrito lê você"
+      },
+      {
+        "id": "q02",
+        "title": "Quatro leituras incompatíveis"
+      },
+      {
+        "id": "q03",
+        "title": "A capital sob a capital"
+      },
+      {
+        "id": "q04",
+        "title": "Os números de Astreon"
+      },
+      {
+        "id": "q05",
+        "title": "A porta que pesa intenções"
+      },
+      {
+        "id": "q06",
+        "title": "Ruas sem céu"
+      },
+      {
+        "id": "q07",
+        "title": "A terra que afundou"
+      },
+      {
+        "id": "q08",
+        "title": "Escalas sob o trono"
+      },
+      {
+        "id": "q09",
+        "title": "O Primeiro Sinal Moderno"
+      },
+      {
+        "id": "q10",
+        "title": "O banquete das seis versões"
+      },
+      {
+        "id": "q11",
+        "title": "A fome que ainda não aconteceu"
+      },
+      {
+        "id": "q12",
+        "title": "O Conclave divide-se"
+      },
+      {
+        "id": "q13",
+        "title": "Balanças quebradas na rua"
+      },
+      {
+        "id": "q14",
+        "title": "Uma máquina que pede continuidade"
+      },
+      {
+        "id": "q15",
+        "title": "A assembleia do imprevisível"
+      },
+      {
+        "id": "q16",
+        "title": "O futuro sem proprietário"
+      },
+      {
+        "id": "q17",
+        "title": "O silêncio sob o palácio"
+      },
+      {
+        "id": "q18",
+        "title": "O preço da previsão"
+      }
+    ],
+    "outcomes": {
+      "publica": "Modelos, erros e consultas passam a ter auditoria e acesso públicos.",
+      "selada": "A Âncora deixa de orientar decisões e seus registros tornam-se históricos.",
+      "auditada": "Um conselho plural limita consultas e registra responsabilidade técnica."
+    }
+  },
+  {
+    "id": "arkanor_liora_sinais_que_nao_pertencem",
+    "title": "Sinais que não pertencem",
+    "category": "companion",
+    "region": "arkanor",
+    "summary": "Construir confiança, amizade, romance possível ou distância respeitosa com Liora sem transformar intimidade em recompensa.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "As margens do caderno"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "Uma manhã sem descoberta"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "O nome ausente"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Dois dias fora das muralhas"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Verdade não é absolvição"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "O caminho de Liora"
+      }
+    ]
+  },
+  {
+    "id": "arkanor_astreon_o_preco_da_previsao",
+    "title": "O preço da previsão",
+    "category": "companion",
+    "region": "arkanor",
+    "summary": "Conhecer Astreon além dos modelos e decidir se a relação será amizade, aliança, afeto, rivalidade ou ruptura.",
+    "stages": [
+      {
+        "id": "vinculo_1",
+        "title": "A distância entre pessoas"
+      },
+      {
+        "id": "vinculo_2",
+        "title": "A cidade que o modelo perdeu"
+      },
+      {
+        "id": "vinculo_3",
+        "title": "Um jogo sem vencedor"
+      },
+      {
+        "id": "vinculo_4",
+        "title": "Portas que lembram passos"
+      },
+      {
+        "id": "vinculo_5",
+        "title": "Um dia sem previsões"
+      },
+      {
+        "id": "vinculo_6",
+        "title": "O preço da previsão"
+      }
+    ]
+  },
+  {
+    "id": "arkanor_colheita_em_divida",
+    "title": "A colheita em dívida",
+    "category": "side",
+    "region": "arkanor",
+    "summary": "Trabalhadores e arrendatários produzem uma safra incapaz de pagar contratos alterados por grandes proprietários.",
+    "stages": [
+      {
+        "id": "contratos"
+      },
+      {
+        "id": "medidas"
+      },
+      {
+        "id": "assembleia"
+      },
+      {
+        "id": "consequencia"
+      }
+    ]
+  },
+  {
+    "id": "arkanor_agua_com_dono",
+    "title": "Água com dono",
+    "category": "community",
+    "region": "arkanor",
+    "summary": "Nascente Serena enfrenta uma concessão que transforma água comunitária em propriedade comercial.",
+    "stages": [
+      {
+        "id": "seca"
+      },
+      {
+        "id": "testemunhos"
+      },
+      {
+        "id": "obra"
+      },
+      {
+        "id": "acordo"
+      }
+    ]
+  },
+  {
+    "id": "arkanor_terra_sem_documento",
+    "title": "Terra sem documento",
+    "category": "faction",
+    "region": "arkanor",
+    "summary": "Famílias rurais, migrantes e comunidades antigas disputam terras cuja documentação foi criada depois de sua ocupação.",
+    "stages": [
+      {
+        "id": "marcos"
+      },
+      {
+        "id": "testemunhos"
+      },
+      {
+        "id": "arquivo"
+      },
+      {
+        "id": "julgamento"
+      }
+    ]
+  }
+]

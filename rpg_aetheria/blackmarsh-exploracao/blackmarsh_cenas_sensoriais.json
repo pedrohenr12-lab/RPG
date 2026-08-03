@@ -1,0 +1,17 @@
+[
+  {
+    "id": "blackmarsh_escutar",
+    "texto": "Você controla o impulso de se levantar. Gotas grossas caem de folhas acima; algumas terminam na água, outras no dorso de algo que se move sem pressa. Há uma linha de bolhas seguindo contra a corrente e, mais longe, um toque metálico de conchas. Tudo é novo demais para você nomear com segurança. Uma escolha apressada pode aproximar você de um aliado, de uma fonte de água limpa ou da boca de um crocodilo.",
+    "opcoes": [
+      {"texto": "Ler a direção das bolhas e procurar terreno seguro", "teste": {"nome": "Interpretar os sinais do pântano", "atributo": "percepcao", "dificuldade": 13, "destino_sucesso": "blackmarsh_preparado", "destino_falha": "blackmarsh_preparado", "efeitos_sucesso": [{"tipo": "flag", "valor": "primeiro_alerta_blackmarsh"}, {"tipo": "xp", "valor": 4}], "efeitos_falha": [{"tipo": "energia", "valor": -3}]}},
+      {"texto": "Levantar antes que a água suba mais", "destino": "blackmarsh_preparado", "efeitos": [{"tipo": "energia", "valor": -2}]}
+    ]
+  },
+  {
+    "id": "blackmarsh_preparado",
+    "texto": "Você percebe que liberdade aqui não significa ausência de limites. Significa escolher se segue uma luz, se testa uma raiz, se bebe uma água aparentemente limpa, se faz fogo e denuncia sua presença ou se passa mais uma hora com fome. Blackmarsh vai guardar suas decisões em rastros, alianças e histórias — mesmo que ninguém as conte de volta para você.",
+    "opcoes": [
+      {"texto": "Entrar na exploração livre de Blackmarsh", "modo": "exploracao_blackmarsh", "bioma_inicial": "aleatorio"}
+    ]
+  }
+]

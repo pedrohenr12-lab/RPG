@@ -1,0 +1,15 @@
+[
+  {
+    "id": "frostreach_escutar_antes",
+    "texto": "Você não se levanta. Primeiro observa o vapor da própria respiração e tenta descobrir de onde o vento vem. Há um ruído grave — mar, avalanche distante ou uma criatura muito grande se movendo atrás de uma parede de gelo. Um corvo passa acima de você, mas não grasna. A ausência desse som parece mais importante do que o som em si. Nada aqui lhe é familiar, e é exatamente por isso que cada detalhe importa.",
+    "opcoes": [
+      {"texto": "Tentar identificar rastros, vento e sons antes de andar", "teste": {"nome": "Ler o gelo e o silêncio", "atributo": "percepcao", "dificuldade": 13, "destino_sucesso": "frostreach_preparado", "destino_falha": "frostreach_preparado", "efeitos_sucesso": [{"tipo": "flag", "valor": "primeiro_alerta_frostreach"}, {"tipo": "xp", "valor": 4}], "efeitos_falha": [{"tipo": "energia", "valor": -3}, {"tipo": "temperatura", "valor": -2}]}},
+      {"texto": "Levantar antes que o frio adormeça suas mãos", "destino": "frostreach_preparado", "efeitos": [{"tipo": "temperatura", "valor": -3}]}
+    ]
+  },
+  {
+    "id": "frostreach_preparado",
+    "texto": "Você escolhe caminhar devagar. Frostreach não recompensa pressa: a neve esconde fendas, a água salgada pode matar de sede, uma caça bem-sucedida pode atrair lobos e uma fogueira pode ser vista por quem você não deseja encontrar. Cada direção é livre; cada consequência fica com você.",
+    "opcoes": [{"texto": "Entrar na exploração livre de Frostreach", "modo": "exploracao_frostreach", "bioma_inicial": "aleatorio"}]
+  }
+]

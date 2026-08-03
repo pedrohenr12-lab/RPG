@@ -32,6 +32,36 @@ def executar_cena(cena, estado):
         if escolha.isdigit() and 1 <= int(escolha) <= len(opcoes): break
         print("Opção inválida.")
     opcao = opcoes[int(escolha) - 1]
+    # GANCHO_ESPINHA_EXPLORACAO
+    if opcao.get("modo") == "exploracao_espinha":
+        aplicar_efeitos(opcao.get("efeitos"), estado)
+        from engine.espinha_exploration import iniciar_exploracao_espinha
+        return iniciar_exploracao_espinha(estado, opcao.get("bioma_inicial", "aleatorio"))
+
+    # GANCHO_BLACKMARSH_EXPLORACAO
+    if opcao.get("modo") == "exploracao_blackmarsh":
+        aplicar_efeitos(opcao.get("efeitos"), estado)
+        from engine.blackmarsh_exploration import iniciar_exploracao_blackmarsh
+        return iniciar_exploracao_blackmarsh(estado, opcao.get("bioma_inicial", "aleatorio"))
+
+    # GANCHO_STONEVALE_EXPLORACAO
+    if opcao.get("modo") == "exploracao_stonevale":
+        aplicar_efeitos(opcao.get("efeitos"), estado)
+        from engine.stonevale_exploration import iniciar_exploracao_stonevale
+        return iniciar_exploracao_stonevale(estado, opcao.get("bioma_inicial", "aleatorio"))
+
+    # GANCHO_ARKANOR_EXPLORACAO
+    if opcao.get("modo") == "exploracao_arkanor":
+        aplicar_efeitos(opcao.get("efeitos"), estado)
+        from engine.arkanor_exploration import iniciar_exploracao_arkanor
+        return iniciar_exploracao_arkanor(estado, opcao.get("bioma_inicial", "aleatorio"))
+
+    # GANCHO_FROSTREACH_EXPLORACAO
+    if opcao.get("modo") == "exploracao_frostreach":
+        aplicar_efeitos(opcao.get("efeitos"), estado)
+        from engine.frostreach_exploration import iniciar_exploracao_frostreach
+        return iniciar_exploracao_frostreach(estado, opcao.get("bioma_inicial", "aleatorio"))
+
     sucesso = True
     if opcao.get("teste"):
         sucesso = rolar_teste(estado, opcao["teste"])

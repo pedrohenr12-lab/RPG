@@ -1,0 +1,69 @@
+{
+  "id": "00_despertar_eldorwood_floresta",
+  "titulo": "Sob um céu que a floresta esconde",
+  "texto": "A consciência retorna aos poucos: primeiro a pressão de raízes sob as costas, depois a chuva retida nas copas, por fim o cheiro de terra fria. O céu aparece somente em fragmentos verdes. Você não reconhece as árvores, as constelações desenhadas em líquen nem a língua gravada numa placa de casca. Ao redor, nenhuma voz humana responde. Há apenas um riacho, cascos recentes e pedras regulares soterradas pelo musgo.",
+  "meta": {
+    "regiao": "eldorwood",
+    "bioma": "floresta_densa_antiga",
+    "fase": "nascimento",
+    "tipo_missao": "livre"
+  },
+  "opcoes": [
+    {
+      "texto": "Observar o lugar antes de abandonar o ponto de despertar",
+      "destino": "r2_f01_chuva_sob_as_copas",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "eldorwood.nascimento.f.observou",
+          "valor": true,
+          "categoria": "eldorwood",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você não escolhe um destino ainda. Primeiro mede o vento, a umidade, os sons e as saídas; só então deixa o ponto onde acordou, capaz de reconhecê-lo se precisar voltar.",
+      "jornada": {
+        "distancia_km": 1.2,
+        "minutos_minimos": 45,
+        "terreno": "floresta_densa_antiga",
+        "direcao": "norte",
+        "perto_civilizacao": false
+      }
+    },
+    {
+      "texto": "Seguir o sinal de passagem mais recente",
+      "destino": "r2_f02_samambaias_em_espiral",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "eldorwood.nascimento.f.seguiu_rastro",
+          "valor": true,
+          "categoria": "eldorwood",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você escolhe o sinal mais recente, mas não o confunde com segurança. Mantém distância suficiente para parar se o autor das marcas retornar pelo mesmo caminho.",
+      "jornada": {
+        "distancia_km": 2.1,
+        "minutos_minimos": 74,
+        "terreno": "floresta_densa_antiga",
+        "direcao": "leste",
+        "perto_civilizacao": false
+      }
+    },
+    {
+      "texto": "Deixar a rota surgir da exploração livre, passo a passo",
+      "modo": "exploracao_livre",
+      "efeitos": [
+        {
+          "tipo": "fato",
+          "chave": "eldorwood.nascimento.f.livre",
+          "valor": true,
+          "categoria": "eldorwood",
+          "descricao": ""
+        }
+      ],
+      "transicao": "Você recusa transformar os primeiros sinais em destino. O mapa permanecerá aberto: direção, ritmo, descanso e desvios serão escolhidos durante a marcha."
+    }
+  ]
+}
